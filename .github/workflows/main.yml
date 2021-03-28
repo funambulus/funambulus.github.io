@@ -39,7 +39,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          npm run build 
+          CI='' npm run build 
 
       # - name: Run tests
       #   run: npm run test:ci    
