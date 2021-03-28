@@ -39,7 +39,7 @@ jobs:
           git config --global user.name ${{ secrets.PERSONAL_USERNAME }}
           git config --global user.email ${{ secrets.PERSONAL_EMAIL }}
           git remote set-url origin https://github.com/funambulus/funambulus.github.io
-          npm run deploy
+          CI='' npm run deploy
         env:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
