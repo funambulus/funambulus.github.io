@@ -5,7 +5,7 @@ import './style.css'
 
 const Header = () => {
     return (
-        <FlexContainer>
+        <FlexContainer className="px-5">
             <FlexRowHeader>
                 <FlexCol style={{
                     flex: 4,
@@ -16,16 +16,16 @@ const Header = () => {
                     SYNERGENCE
                 </FlexCol>
                 <FlexCol>
-                    <Link to="/">HOME</Link>
+                    <Link to="/" className="color-grey">HOME</Link>
                 </FlexCol>
                 <FlexCol>
-                    <Link to="/service">SERVICE</Link>
+                    <Link to="/service" className="color-grey">SERVICE</Link>
                 </FlexCol>
                 <FlexCol>
-                    <Link to="/about">ABOUT</Link>
+                    <Link to="/about" className="color-grey">ABOUT</Link>
                 </FlexCol>
                 <FlexCol>
-                    <Link to="/contact">CONTACT</Link>
+                    <Link to="/contact" className="color-grey">CONTACT</Link>
                 </FlexCol>
             </FlexRowHeader>
         </FlexContainer >
