@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd67c7ee.chunk.css",
-    "main.js": "/static/js/main.6cf1cea1.chunk.js",
-    "main.js.map": "/static/js/main.6cf1cea1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a12bed53.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a12bed53.js.map",
-    "static/js/2.d93b7dae.chunk.js": "/static/js/2.d93b7dae.chunk.js",
-    "static/js/2.d93b7dae.chunk.js.map": "/static/js/2.d93b7dae.chunk.js.map",
-    "static/js/3.51de7a30.chunk.js": "/static/js/3.51de7a30.chunk.js",
-    "static/js/3.51de7a30.chunk.js.map": "/static/js/3.51de7a30.chunk.js.map",
+    "main.css": "/static/css/main.0ebd8813.chunk.css",
+    "main.js": "/static/js/main.9f19f1c2.chunk.js",
+    "main.js.map": "/static/js/main.9f19f1c2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8f5267d4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8f5267d4.js.map",
+    "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
+    "static/js/2.d415f6b9.chunk.js": "/static/js/2.d415f6b9.chunk.js",
+    "static/js/2.d415f6b9.chunk.js.map": "/static/js/2.d415f6b9.chunk.js.map",
+    "static/js/3.f5aee506.chunk.js": "/static/js/3.f5aee506.chunk.js",
+    "static/js/3.f5aee506.chunk.js.map": "/static/js/3.f5aee506.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.bd67c7ee.chunk.css.map": "/static/css/main.bd67c7ee.chunk.css.map",
-    "static/js/2.d93b7dae.chunk.js.LICENSE.txt": "/static/js/2.d93b7dae.chunk.js.LICENSE.txt"
+    "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
+    "static/css/main.0ebd8813.chunk.css.map": "/static/css/main.0ebd8813.chunk.css.map",
+    "static/js/2.d415f6b9.chunk.js.LICENSE.txt": "/static/js/2.d415f6b9.chunk.js.LICENSE.txt",
+    "static/media/ben-parker.ec0026f2.jpg": "/static/media/ben-parker.ec0026f2.jpg",
+    "static/media/dylan-gillis.efd42676.jpg": "/static/media/dylan-gillis.efd42676.jpg",
+    "static/media/niver-vega.1fbdba65.jpg": "/static/media/niver-vega.1fbdba65.jpg",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.a12bed53.js",
-    "static/js/2.d93b7dae.chunk.js",
-    "static/css/main.bd67c7ee.chunk.css",
-    "static/js/main.6cf1cea1.chunk.js"
+    "static/js/runtime-main.8f5267d4.js",
+    "static/css/2.19627560.chunk.css",
+    "static/js/2.d415f6b9.chunk.js",
+    "static/css/main.0ebd8813.chunk.css",
+    "static/js/main.9f19f1c2.chunk.js"
   ]
 }
