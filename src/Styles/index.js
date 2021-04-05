@@ -23,7 +23,7 @@ export const FlexRow = styled.div`
     text-weight:bold;
 `;
 export const FlexCol = styled.div`
-    flex:1;
+    flex:${props => props.size ? props.size : 1};
     flex-direction: column;
 `;
 export const SlickRow = styled.div`
@@ -54,4 +54,12 @@ export const SlickPara = styled.div`
     max-width: 450px;
     text-align: right;
     color:white;
+    `;
+
+export const Card = styled.div`
+    margin: 10px 70px;
+    padding: 40px;
+    min-height: 20vh;
+    box-shadow: 2px 5px 20px -3px #00000033;
+    margin-bottom:40px;
 `;

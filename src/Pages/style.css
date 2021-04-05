@@ -10,3 +10,24 @@
 .slick-dots li.slick-active button:before {
     color: white;
 }
+
+.testimonials_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testimonials_desc {
+    text-align: right;
+    color: #817D7D;
+    padding: 0 80px;
+}
+
+.testimonials_desc>p:nth-child(1) {
+    font-size: 20px;
+}
+
+.testimonials_desc>p:nth-child(2) {
+    font-size: 17px;
+    font-weight: bold;
+}

@@ -14,3 +14,9 @@ a:hover {
 .px-5 {
     padding: 0 5%;
 }
+
+.companyName {
+    padding: 0px 20px;
+    font-weight: bolder;
+    font-size: 28px;
+}
