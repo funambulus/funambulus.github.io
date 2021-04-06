@@ -1,22 +1,26 @@
 a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
     font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 a:hover {
     text-decoration: none;
     color: black;
-    font-weight: 500;
+    text-align: center;
 }
 
 .px-5 {
-    padding: 0 5%;
+    padding: 0 10%;
 }
 
 .companyName {
     padding: 0px 20px;
-    font-weight: bolder;
-    font-size: 28px;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(52, 223, 52);
+    text-shadow: 0px 1px 0px #014f07;
 }

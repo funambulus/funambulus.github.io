@@ -3,7 +3,7 @@
 }
 
 .color-primary-blue {
-    color: #5ED6FC!important;
+    color: #70E9F1!important;
 }
 
 .cursorOnHover {
@@ -12,6 +12,8 @@
 
 * {
     font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    color: #686D76;
 }
 
 @media (prefers-reduced-motion: no-preference) {}

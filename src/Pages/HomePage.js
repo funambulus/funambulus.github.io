@@ -89,14 +89,15 @@ const HomePage = () => {
                     background: `url(${testimonalHead})`,
                     backgroundSize: 'cover',
                     height: 200,
-                    backgroundPosition: '0 10%',
+                    backgroundPosition: '0 45%',
                 }}>
                     <div
                         style={{
                             color: 'white',
                             fontSize: 36,
                             fontWeight: 'bold',
-                            padding: '70px 65px',
+                            padding: '70px 0px',
+                            textAlign: 'center'
                         }}
                     >
                         Our Satisfied Customers

@@ -20,7 +20,7 @@
 .testimonials_desc {
     text-align: right;
     color: #817D7D;
-    padding: 0 80px;
+    padding: 0 40px;
 }
 
 .testimonials_desc>p:nth-child(1) {
@@ -30,4 +30,88 @@
 .testimonials_desc>p:nth-child(2) {
     font-size: 17px;
     font-weight: bold;
+}
+
+
+/* Service */
+
+.aboutTopImage {
+    min-height: 88vh;
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+.aboutTopCard {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    right: 30%;
+    width: auto;
+    min-height: 300px;
+    z-index: 99;
+    box-shadow: 3px 3px 6px 0 #0000003d;
+    margin-bottom: 40px;
+}
+
+.heading-1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.7;
+}
+
+.divider {
+    border: 4px solid #70E9F1;
+    border-radius: 20px;
+    width: 60%;
+    margin-bottom: 53px;
+}
+
+.para-1 {
+    background: white;
+    padding: 40px 90px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.sectionImage {
+    max-width: 300px;
+}
+
+.leftSectionImage {
+    width: 300px;
+    height: 250px;
+}
+
+.sectionDesc {
+    max-width: 300px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.para {
+    font-size: 22px;
+    padding: 0 20px;
+    margin-bottom: 4px;
+}
+
+.customIcon {
+    stroke: #70E9F1;
+}
+
+.serviceIndImage {
+    width: 300px;
+    height: 300px;
+    transform: translate(30px, 30px);
+    position: relative;
+}
+
+.serviceIndShade {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: lightgrey;
+    z-index: -1;
 }
