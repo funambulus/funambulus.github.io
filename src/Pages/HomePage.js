@@ -72,7 +72,7 @@ const HomePage = () => {
                                                 {/* “join us to work together and  to make difference in your field” */}
                                             </SlickPara>
                                             <SlickItem size="24px">
-                                                <FeatherIcon className="cursorOnHover" icon="arrow-right" size="40" onclick={() => alert("click!!")} />
+                                                <FeatherIcon className="cursorOnHover" style={{ stroke: '#FFFFFF' }} icon="arrow-right" size="40" onClick={() => alert("click!!")} />
                                             </SlickItem>
                                         </SlickCard>
                                     </div>

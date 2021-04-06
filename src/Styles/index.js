@@ -46,6 +46,7 @@ export const SlickItem = styled.div`
 `;
 export const SlickHeader = styled.div`
     font-size:${props => props.size};
+    font-weight: 500;
     padding-top: 70px;
     color:white;
 `;
@@ -83,6 +84,7 @@ export const ServiceLink = styled.div`
     box-shadow: 0 4px 4px 0 #0000003d;
     margin-bottom:20px;
     cursor:pointer;
+    border-radius: 6px;
     &:hover{
         box-shadow: 0 4px 4px 1px #00000060;
     }
