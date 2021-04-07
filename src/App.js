@@ -13,11 +13,20 @@ import {
 } from "react-router-dom";
 import Header from './Component/Header';
 import Footer from './Component/Footer';
+import { init } from 'emailjs-com';
+import Aos from 'aos';
+import { useEffect } from 'react';
+// synergenceconsultants@gmail.com
 
 function App() {
+  useEffect(() => {
+    init("user_VgTA2WoFU0I3dephNDYU0");
+    Aos.init();
+  }, []);
+
   return (
     <Router>
-      <Header/>
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/service" component={ServicePage} />
@@ -25,7 +34,7 @@ function App() {
         <Route path="/contact" component={ContactPage} />
         <Route component={NotFound} />
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

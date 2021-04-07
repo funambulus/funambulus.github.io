@@ -1,9 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+import sendNodeMail from '../Constant/Email/sendEmailJS';
 import { FlexCol, FlexContainer, FlexRow } from '../Styles';
 import contactTopImage from "./../assets/damian-zaleski.jpg";
 import contactTopImage2 from "./../assets/tamas-tuzes-katai.jpg";
 
 const ContactPage = () => {
+
+    const [form, setform] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: ''
+    });
+    const handleChange = (e) => {
+        e.preventDefault();
+        var temp1 = {
+            ...form,
+            [e.target.name]: e.target.value
+        }
+        setform(temp1)
+        console.log(form)
+    }
     return (
         <FlexContainer>
             <FlexRow>
@@ -29,14 +46,20 @@ const ContactPage = () => {
             <FlexRow className="formContainer" style={{ alignItems: 'flex-start' }}>
                 <FlexCol size="2" className="formInputs">
                     <label>Name:</label>
-                    <input id="name" type="text" className="contactInputs" />
+                    <input name="name" type="text" className="contactInputs" value={form.name} onChange={(e) => handleChange(e)} placeholder="Enter Name" />
                     <label>Mobile Number:</label>
-                    <input id="phone" type="text" className="contactInputs" />
+                    <input name="phone" type="text" className="contactInputs" value={form.phone} onChange={(e) => handleChange(e)} placeholder="Enter Phone" />
                     <label>Email:</label>
-                    <input id="email" type="text" className="contactInputs" />
+                    <input name="email" type="text" className="contactInputs" value={form.email} onChange={(e) => handleChange(e)} placeholder="Enter Email" />
                     <label>Message</label>
-                    <input id="message" type="text" className="contactInputs" />
-                    <button>SUBMIT</button>
+                    <input name="message" type="text" className="contactInputs" value={form.message} onChange={(e) => handleChange(e)} placeholder="Enter Message" />
+                    <button
+                        onClick={() => {
+                            // console.log(form.name, form.email, 'A New Message from the ' + form.name, form.message)
+                            sendNodeMail(form.name, form.email, form.phone, form.message)
+                            alert("Sent!!");
+                        }}
+                    >SUBMIT</button>
                 </FlexCol>
                 <FlexCol size="2" className="formImageContainer">
                     <img src={contactTopImage2} className="contactImage2" />
