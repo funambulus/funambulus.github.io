@@ -11,7 +11,6 @@ export const FlexRowHeader = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    text-weight:bold;
 `;
 export const FlexRow = styled.div`
     min-height: 80vh;
@@ -107,10 +106,10 @@ export const ServiceInfoHead = styled.div`
 `;
 export const Divider = styled.div`
     width:50%;
-    border:5px solid black;
+    border:5px solid #373A40;
     border-radius:20px;
     margin:30px auto;
-    background: black;
+    background: #373A40;
 `;
 export const ServiceInfoBody = styled.div`
     width:100%;
