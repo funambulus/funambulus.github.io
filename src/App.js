@@ -23,7 +23,6 @@ function App() {
     init("user_VgTA2WoFU0I3dephNDYU0");
     Aos.init();
   }, []);
-
   return (
     <Router>
       <Header />

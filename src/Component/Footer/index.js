@@ -12,7 +12,7 @@ const Footer = () => {
         textAlign: 'center',
       }}
     >
-      Footer
+      @Copyright. All right reserved.
     </div>
   );
 };

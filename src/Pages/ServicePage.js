@@ -55,7 +55,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='file-text'
-            size='46'
+            size='60'
           />
           <p className='para'>Resume Development</p>
         </ServiceLink>
@@ -63,7 +63,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='help-circle'
-            size='46'
+            size='60'
           />
           <p className='para'>Application Assistance</p>
         </ServiceLink>
@@ -71,7 +71,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='trending-up'
-            size='46'
+            size='60'
           />
           <p className='para'>Network Building</p>
         </ServiceLink>
@@ -79,7 +79,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='file-text'
-            size='46'
+            size='60'
           />
           <p className='para'>Resume Development</p>
         </ServiceLink>
@@ -87,7 +87,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='alert-octagon'
-            size='46'
+            size='60'
           />
           <p className='para'>Offer Negotiation</p>
         </ServiceLink>
@@ -95,7 +95,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='monitor'
-            size='46'
+            size='60'
           />
           <p className='para'>Coaching</p>
         </ServiceLink>
@@ -103,7 +103,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='phone'
-            size='46'
+            size='60'
           />
           <p className='para'>Expert on Call</p>
         </ServiceLink>
@@ -111,7 +111,7 @@ const ServicePage = () => {
           <FeatherIcon
             className='cursorOnHover customIcon'
             icon='clock'
-            size='46'
+            size='60'
           />
           <p className='para'>24x7 Customer Care</p>
         </ServiceLink>

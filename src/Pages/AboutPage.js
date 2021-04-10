@@ -37,16 +37,18 @@ const AboutPage = () => {
       <br />
       <br />
       <Card style={{ marginRight: '20%', marginTop: 50 }}>
-        <FlexRow style={{ minHeight: '20vh', justifyContent: 'space-evenly' }}>
+        <FlexRow
+          style={{
+            minHeight: '20vh',
+            justifyContent: 'space-around',
+            alignItems: 'flex-start',
+          }}
+        >
           <FlexCol size='2' className='sectionImage'>
-            <img
-              src={aboutTopImage}
-              className='leftSectionImage'
-              alt='by annie-spratt'
-            />
+            <img src={aboutTopImage} className='leftSectionImage' alt='' />
           </FlexCol>
           <FlexCol size='2' className='sectionDesc'>
-            <p>
+            <p style={{ margin: 0 }}>
               We have over 400 years of collective experience across our Career
               Coaches spanning over 16 industries.
             </p>
@@ -54,16 +56,18 @@ const AboutPage = () => {
         </FlexRow>
       </Card>
       <Card style={{ marginRight: '20%', marginTop: 50 }}>
-        <FlexRow style={{ minHeight: '20vh', justifyContent: 'space-evenly' }}>
+        <FlexRow
+          style={{
+            minHeight: '20vh',
+            justifyContent: 'space-around',
+            alignItems: 'flex-start',
+          }}
+        >
           <FlexCol size='2' className='sectionImage'>
-            <img
-              src={sectionImage}
-              className='leftSectionImage'
-              alt='by annie-spratt'
-            />
+            <img src={sectionImage} className='leftSectionImage' alt='' />
           </FlexCol>
           <FlexCol size='2' className='sectionDesc'>
-            <p>
+            <p style={{ margin: 0 }}>
               We have helped professionals identify their strengths, target
               A-List employers, get their profiles shortlisted and ace
               interviews to get offered on the terms they desire.
