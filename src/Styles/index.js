@@ -57,7 +57,7 @@ export const SlickPara = styled.div`
 `;
 
 export const Card = styled.div`
-    margin: 10px 12%;
+    margin: 15px 20%;
     padding: 30px;
     min-height: 20vh;
     box-shadow: 2px 5px 20px -3px #00000033;
@@ -68,7 +68,7 @@ export const ServiceContainer = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
     margin: 0 12%;
     margin-top:120px;
 `;
@@ -76,8 +76,9 @@ export const ServiceContainer = styled.div`
 export const ServiceLink = styled.div`
     flex:1;
     flex-direction:column;
-    min-width: 170px;
-    max-width: 180px;
+    min-height: 135px;
+    min-width: 230px;
+    max-width: 230px;
     padding: 35px 0;
     text-align: center;
     box-shadow: 0 4px 4px 0 #0000003d;

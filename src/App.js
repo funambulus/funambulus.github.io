@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router history={hashHistory} >
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />

@@ -35,35 +35,35 @@ const ServicePage = () => {
             <br />
             <ServiceContainer>
                 <ServiceLink onClick={() => scrollTo("service1")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="file-text" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="file-text" size="60" />
                     <p className="para">Resume Development</p>
                 </ServiceLink>
                 <ServiceLink onClick={() => scrollTo("service2")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="help-circle" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="help-circle" size="60" />
                     <p className="para">Application Assistance</p>
                 </ServiceLink>
                 <ServiceLink onClick={() => scrollTo("service3")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="trending-up" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="trending-up" size="60" />
                     <p className="para">Network Building</p>
                 </ServiceLink>
                 <ServiceLink onClick={() => scrollTo("service4")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="file-text" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="file-text" size="60" />
                     <p className="para">Resume Development</p>
                 </ServiceLink>
                 <ServiceLink onClick={() => scrollTo("service5")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="alert-octagon" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="alert-octagon" size="60" />
                     <p className="para">Offer Negotiation</p>
                 </ServiceLink>
                 <ServiceLink onClick={() => scrollTo("service6")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="monitor" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="monitor" size="60" />
                     <p className="para">Coaching</p>
                 </ServiceLink>
                 <ServiceLink onClick={() => scrollTo("service7")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="phone" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="phone" size="60" />
                     <p className="para">Expert on Call</p>
                 </ServiceLink>
                 <ServiceLink onClick={() => scrollTo("service1")}>
-                    <FeatherIcon className="cursorOnHover customIcon" icon="clock" size="46" />
+                    <FeatherIcon className="cursorOnHover customIcon" icon="clock" size="60" />
                     <p className="para">24x7 Customer Care</p>
                 </ServiceLink>
             </ServiceContainer>

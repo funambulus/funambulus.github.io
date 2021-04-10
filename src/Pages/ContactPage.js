@@ -59,7 +59,9 @@ const ContactPage = () => {
                             sendNodeMail(form.name, form.email, form.phone, form.message)
                             alert("Sent!!");
                         }}
-                    >SUBMIT</button>
+                    >
+                        SUBMIT
+                    </button>
                 </FlexCol>
                 <FlexCol size="2" className="formImageContainer">
                     <img src={contactTopImage2} className="contactImage2" />

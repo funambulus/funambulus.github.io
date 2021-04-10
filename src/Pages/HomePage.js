@@ -105,7 +105,7 @@ const HomePage = () => {
                 </FlexCol>
             </FlexRow>
             <Card>
-                <FlexRow style={{ minHeight: '20vh' }}>
+                <FlexRow style={{ minHeight: '20vh'  }}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
                             “What makes the experience with Synergence completely worth it is the level
@@ -121,7 +121,7 @@ const HomePage = () => {
                 </FlexRow>
             </Card>
             <Card>
-                <FlexRow style={{ minHeight: '20vh' }}>
+                <FlexRow style={{ minHeight: '20vh'}}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
                             “What makes the experience with Synergence completely worth it is the level
