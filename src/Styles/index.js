@@ -69,7 +69,7 @@ export const ServiceContainer = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   width: 70%;
-  margin: 0 12%;
+  margin: auto;
   margin-top: 120px;
 `;
 
