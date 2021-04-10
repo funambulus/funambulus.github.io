@@ -1,7 +1,7 @@
 a {
     text-decoration: none;
     color: #686D76;
-    font-size: 20px;
+    font-size:1.2vw;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -23,7 +23,7 @@ a:hover {
 .companyName {
     padding: 0px 20px;
     font-weight: 600;
-    font-size: 32px;
-    color: rgb(52, 223, 52);
+    font-size: 2vw;
+    color: rgb(53 54 53 / 85%);
     text-shadow: 0px 1px 0px #014f07;
 }

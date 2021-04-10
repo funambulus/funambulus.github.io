@@ -77,7 +77,7 @@ const ServicePage = () => {
                             <Divider></Divider>
                             <ServiceInfoBody>
                                 <ServicesInfo>
-                                    <FlexCol size="2" style={{ maxWidth: '45%' }}>
+                                    <FlexCol size="2" style={{ maxWidth: '60%',paddingRight: 40 }}>
                                         The Resume Screening round is the first and most critical step in getting your application to the next level.<br />
                                         <br />
                                 What you can expect from us:<br />

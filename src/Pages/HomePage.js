@@ -64,14 +64,14 @@ const HomePage = () => {
                                         backgroundPositionY: 'top'
                                     }}>
                                         <SlickCard>
-                                            <SlickHeader size="70px">
+                                            <SlickHeader size="3.8vw">
                                                 {obj.header}
                                             </SlickHeader>
-                                            <SlickPara size="22px">
+                                            <SlickPara size="1.2vw">
                                                 {obj.quote}
                                                 {/* “join us to work together and  to make difference in your field” */}
                                             </SlickPara>
-                                            <SlickItem size="24px">
+                                            <SlickItem size="1.2vw">
                                                 <FeatherIcon className="cursorOnHover" style={{ stroke: '#FFFFFF' }} icon="arrow-right" size="40" onClick={() => alert("click!!")} />
                                             </SlickItem>
                                         </SlickCard>
@@ -96,8 +96,9 @@ const HomePage = () => {
                             color: 'white',
                             fontSize: 36,
                             fontWeight: 'bold',
-                            padding: '70px 0px',
-                            textAlign: 'center'
+                            padding: '80px 0px',
+                            textAlign: 'center',
+                            backdropFilter: 'brightness(0.5)'
                         }}
                     >
                         Our Satisfied Customers
@@ -105,7 +106,7 @@ const HomePage = () => {
                 </FlexCol>
             </FlexRow>
             <Card>
-                <FlexRow style={{ minHeight: '20vh'  }}>
+                <FlexRow style={{ minHeight: '16vh' }}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
                             “What makes the experience with Synergence completely worth it is the level
@@ -121,7 +122,7 @@ const HomePage = () => {
                 </FlexRow>
             </Card>
             <Card>
-                <FlexRow style={{ minHeight: '20vh'}}>
+                <FlexRow style={{ minHeight: '16vh' }}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
                             “What makes the experience with Synergence completely worth it is the level
