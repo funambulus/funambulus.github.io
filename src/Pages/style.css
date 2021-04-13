@@ -219,11 +219,11 @@
 }
 
 .formImageContainer {
-    max-width: 40%;
+    max-width: 30%;
     border-left: 1px solid darkslategrey;
     padding-left: 20px;
 }
 
 .contactImage2 {
-    width: 50%;
+    width: 100%;
 }
