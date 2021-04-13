@@ -7,7 +7,6 @@ import HomePage from './Pages/HomePage';
 import NotFound from './Pages/NotFound';
 import ServicePage from './Pages/ServicePage';
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -15,27 +14,16 @@ import Header from './Component/Header';
 import Footer from './Component/Footer';
 import { init } from 'emailjs-com';
 import Aos from 'aos';
-import { useEffect } from 'react';
-// synergenceconsultants@gmail.com
-import ReactGA from 'react-ga';
-
-
+import { Fragment, useEffect } from 'react';
 
 
 function App() {
   useEffect(() => {
     init("user_VgTA2WoFU0I3dephNDYU0");
-
-    // ReactGA.initialize('G-4MKZ1340P8');
-    // ReactGA.pageview(window.location.pathname + window.location.search);
-    // ReactGA.event({
-    //   category: 'User',
-    //   action: 'Sent message'
-    // });
     Aos.init();
   }, []);
   return (
-    <Router>
+    <Fragment>
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
@@ -45,7 +33,7 @@ function App() {
         <Route component={NotFound} />
       </Switch>
       <Footer />
-    </Router>
+    </Fragment>
   );
 }
 

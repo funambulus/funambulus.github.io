@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FlexCol, FlexContainer, FlexRow, ServiceContainer, ServiceLink, ServicesInfo, ServiceInfoHead, Divider, ServiceInfoBody } from '../Styles';
 import serviceTopImage from "./../assets/markus-spiske.jpg";
 import serviceIndImage from "./../assets/gabrielle-henderson.jpg";
@@ -16,7 +16,7 @@ const ServicePage = () => {
                         maxHeight: '84vh',
                         overflow: 'hidden',
                     }}>
-                    <img src={serviceTopImage} className="aboutTopImage" alt='Photo by Markus Spiske' />
+                    <img src={serviceTopImage} className="aboutTopImage" alt='Markus Spiske' />
                     <div className="aboutTopCard">
                         <div className="heading-1">Our Service</div>
                         <div className="divider"></div>
@@ -85,7 +85,7 @@ const ServicePage = () => {
                                 -	They will make sure that your Resume presents yourstrong points,  achievements & key skills in a recruiter-friendly format.<br />
                                     </FlexCol>
                                     <FlexCol size="1" style={{ maxWidth: '40%', position: 'relative' }}>
-                                        <img src={serviceIndImage} className="serviceIndImage" />
+                                        <img src={serviceIndImage} className="serviceIndImage" alt="by gabrielle-henderson" />
                                         <div className="serviceIndShade"></div>
                                     </FlexCol>
                                 </ServicesInfo>
