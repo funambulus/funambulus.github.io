@@ -17,10 +17,21 @@ import { init } from 'emailjs-com';
 import Aos from 'aos';
 import { useEffect } from 'react';
 // synergenceconsultants@gmail.com
+import ReactGA from 'react-ga';
+
+
+
 
 function App() {
   useEffect(() => {
     init("user_VgTA2WoFU0I3dephNDYU0");
+
+    // ReactGA.initialize('G-4MKZ1340P8');
+    // ReactGA.pageview(window.location.pathname + window.location.search);
+    // ReactGA.event({
+    //   category: 'User',
+    //   action: 'Sent message'
+    // });
     Aos.init();
   }, []);
   return (
