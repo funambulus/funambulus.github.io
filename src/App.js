@@ -13,15 +13,22 @@ import {
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 import { init } from 'emailjs-com';
-import Aos from 'aos';
 import { Fragment, useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 function App() {
   useEffect(() => {
     init("user_VgTA2WoFU0I3dephNDYU0");
-    Aos.init();
+    Aos.init({
+      once: true,
+      easing: 'ease-in-out-back',
+      delay: 100,
+      debounceDelay: 150,
+    });
   }, []);
+
   return (
     <Fragment>
       <Header />

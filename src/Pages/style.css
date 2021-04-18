@@ -25,7 +25,7 @@
 }
 
 .testimonials_desc>p:nth-child(1) {
-    font-size:1.2vw;
+    font-size: 1.2vw;
 }
 
 .testimonials_desc>p:nth-child(2) {
@@ -72,7 +72,7 @@
     box-shadow: 3px 3px 6px 0 #0000003d;
     background: white;
     padding: 40px 60px;
-    font-size:1.2vw;
+    font-size: 1.2vw;
     text-align: justify;
     border: 1px solid white;
 }
@@ -92,7 +92,7 @@
 }
 
 .para {
-    font-size:1.2vw;
+    font-size: 1.2vw;
     padding: 0 30px;
     margin-bottom: 2px;
     margin-top: 14px;
@@ -154,11 +154,12 @@
 .contactTitle {
     color: white;
     font-weight: 500;
+    font-size: 24px;
 }
 
 .contactInfo {
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -183,7 +184,7 @@
 
 .formInputs>label {
     color: #373A40;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     width: 80%;
 }
@@ -193,7 +194,7 @@
     border-bottom: 2px solid #373A40;
     margin: 12px 0;
     width: 80%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .formInputs>.contactInputs:focus {
@@ -201,19 +202,19 @@
 }
 
 .formInputs>button {
-    border: 5px solid #70E9F1;
+    border: 4px solid #70E9F1;
     color: #70E9F1;
     background: white;
     margin: 30px 0;
     padding: 12px;
     width: 80%;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 800;
     cursor: pointer;
 }
 
 .formInputs>button:hover {
-    border: 5px solid #70E9F1;
+    border: 4px solid #70E9F1;
     color: white;
     background: #70E9F1;
 }
@@ -226,4 +227,22 @@
 
 .contactImage2 {
     width: 100%;
+}
+
+.buttonStyled {
+    border: 4px solid #70E9F1;
+    color: #70E9F1;
+    background: white;
+    margin: 30px 0;
+    padding: 12px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.buttonStyled:hover {
+    border: 4px solid #70E9F1;
+    color: white;
+    background: #70E9F1;
 }

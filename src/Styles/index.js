@@ -62,7 +62,7 @@ export const Card = styled.div`
     min-height: 16vh;
     box-shadow: 2px 5px 20px -3px #00000033;
     margin-bottom: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
 `;
 
 export const ServiceContainer = styled.div`
@@ -86,7 +86,7 @@ export const ServiceLink = styled.div`
     // box-shadow: 0 4px 4px 0 #0000003d;
     margin-bottom:8px;
     cursor:pointer;
-    border-radius: 6px;
+    border-radius: 5px;
     &:hover{
         box-shadow: 0 4px 4px 1px #00000060;
     }
@@ -107,6 +107,7 @@ export const ServiceInfoHead = styled.div`
     font-weight:bold;
     text-align:center;
 `;
+
 export const Divider = styled.div`
     width:70%;
     border:2px solid #373A40;
@@ -114,6 +115,7 @@ export const Divider = styled.div`
     margin:30px auto;
     background: #373A40;
 `;
+
 export const ServiceInfoBody = styled.div`
     width:70%;
     margin:0 auto;

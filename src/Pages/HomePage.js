@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import { Card, SlickCard, SlickHeader, SlickPara, SlickItem, SlickRow, FlexContainer, FlexRow, FlexCol } from '../Styles';
 import FeatherIcon from 'feather-icons-react';
-import slideOneImage from "./../assets/dylan-gillis.jpg";
-import testimonalHead from "./../assets/niver-vega.jpg";
-import testimonalImage from "./../assets/ben-parker.jpg";
+import slideOneImage from "./../assets/dylan-gillis.webp";
+import testimonalHead from "./../assets/niver-vega.webp";
+import testimonalImage from "./../assets/ben-parker.webp";
 import "./style.css";
+import { useHistory } from 'react-router';
 
 const HomePage = () => {
 
@@ -49,6 +50,9 @@ const HomePage = () => {
     ]
 
     const [slideData, setSlideData] = useState(data);
+
+    const history = useHistory();
+
     return (
         <FlexContainer>
             <SlickRow>
@@ -64,15 +68,15 @@ const HomePage = () => {
                                         backgroundPositionY: 'top'
                                     }}>
                                         <SlickCard>
-                                            <SlickHeader size="3.8vw">
+                                            <SlickHeader size="3.8vw" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                                 {obj.header}
                                             </SlickHeader>
-                                            <SlickPara size="1.2vw">
+                                            <SlickPara size="1.2vw" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                                 {obj.quote}
                                                 {/* “join us to work together and  to make difference in your field” */}
                                             </SlickPara>
                                             <SlickItem size="1.2vw">
-                                                <FeatherIcon className="cursorOnHover" style={{ stroke: '#FFFFFF' }} icon="arrow-right" size="40" onClick={() => alert("click!!")} />
+                                                <FeatherIcon className="cursorOnHover" style={{ stroke: '#FFFFFF' }} icon="arrow-right" size="40" onClick={() => history.push("/service")} />
                                             </SlickItem>
                                         </SlickCard>
                                     </div>
@@ -90,13 +94,14 @@ const HomePage = () => {
                     backgroundSize: 'cover',
                     height: 200,
                     backgroundPosition: '0 45%',
+                    backgroundAttachment: 'fixed'
                 }}>
                     <div
                         style={{
                             color: 'white',
                             fontSize: 36,
                             fontWeight: 'bold',
-                            padding: '80px 0px',
+                            padding: '78px 0px',
                             textAlign: 'center',
                             backdropFilter: 'brightness(0.5)'
                         }}
@@ -105,7 +110,7 @@ const HomePage = () => {
                         </div>
                 </FlexCol>
             </FlexRow>
-            <Card>
+            <Card data-aos="fade-in">
                 <FlexRow style={{ minHeight: '16vh' }}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
@@ -121,7 +126,7 @@ const HomePage = () => {
                     </FlexCol>
                 </FlexRow>
             </Card>
-            <Card>
+            <Card data-aos="fade-in">
                 <FlexRow style={{ minHeight: '16vh' }}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
