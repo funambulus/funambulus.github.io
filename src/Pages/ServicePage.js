@@ -3,12 +3,13 @@ import { FlexCol, FlexContainer, FlexRow, ServiceContainer, ServiceLink, Service
 import serviceTopImage from "./../assets/markus-spiske.webp"
 import serviceIndImage from "./../assets/gabrielle-henderson.webp";
 import FeatherIcon from 'feather-icons-react';
+import { useHistory } from 'react-router';
 
 const ServicePage = () => {
     const scrollTo = (id) => {
         document.querySelector('#' + id).scrollIntoView({ behavior: 'smooth' });
     }
-
+    const history = useHistory();
     const service = [
         {
             name: "Resume Development",
@@ -92,7 +93,7 @@ const ServicePage = () => {
                 Perfect for candidates who do not need extensive services and have only a few questions with regard to their job search.
                 Book a telephonic or video call with a Career Coach to get expert advice.<br />
                 <div style={{ textAlign: 'center', paddingRight: 20 }}>
-                    <button className="buttonStyled">Know More</button>
+                    <button className="buttonStyled" onClick={() => history.push("/contact")}>Know More</button>
                 </div>
             </>
         },
