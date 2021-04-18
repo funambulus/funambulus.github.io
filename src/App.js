@@ -33,11 +33,11 @@ function App() {
     <Fragment>
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/service" component={ServicePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route component={NotFound} />
+        <Route exact path="/" render={props => <HomePage />} />
+        <Route exact path="/service" render={props => <ServicePage />} />
+        <Route exact path="/about" render={props => <AboutPage />} />
+        <Route exact path="/contact" render={props => <ContactPage />} />
+        <Route exact render={props => <NotFound />} />
       </Switch>
       <Footer />
     </Fragment>
