@@ -45,8 +45,8 @@ const ContactPage = () => {
             </FlexRow>
             <FlexRow className="formContainer" style={{ alignItems: 'flex-start' }}>
                 <FlexCol size="2" className="formInputs">
-                    <label>Name:</label>
-                    <input name="name" type="text" className="contactInputs" value={form.name} onChange={(e) => handleChange(e)} placeholder="Enter Name" />
+                    <label id="l1">Name:</label>
+                    <input id="n1" name="name" type="text" className="contactInputs" value={form.name} onChange={(e) => handleChange(e)} placeholder="Enter Name" />
                     <label>Mobile Number:</label>
                     <input name="phone" type="text" className="contactInputs" value={form.phone} onChange={(e) => handleChange(e)} placeholder="Enter Phone" />
                     <label>Email:</label>

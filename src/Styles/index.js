@@ -56,22 +56,14 @@ export const SlickPara = styled.div`
   color: white;
 `;
 export const Card = styled.div`
-<<<<<<< HEAD
-    margin: 15px 20%;
-    padding: 30px;
-    min-height: 16vh;
-    box-shadow: 2px 5px 20px -3px #00000033;
-    margin-bottom: 40px;
-    border-radius: 5px;
-=======
   margin: 15px 20%;
   padding: 30px;
-  height: 40vh;
+  min-height: 25vh;
+  max-height: 40vh;
   box-shadow: 2px 5px 20px -3px #00000033;
   margin-bottom: 40px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
->>>>>>> ed697b0f56552e4595aa85091ba1acc61ac02d82
 `;
 export const ServiceContainer = styled.div`
   display: flex;
