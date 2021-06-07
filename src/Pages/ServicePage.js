@@ -110,7 +110,7 @@ const ServicePage = () => {
                         }}>
                         <img src={serviceTopImage} className="aboutTopImage" alt='Markus Spiske' loading="eager" />
                         <div className="aboutTopCard">
-                            <div className="heading-1">Our Service</div>
+                            <div className="heading-1">Our Services</div>
                             <div className="divider"></div>
                             <p className="para-1">
                                 A service business is a business model that offers intangible value beyond a physical product.
@@ -125,7 +125,7 @@ const ServicePage = () => {
                 <br />
                 <br />
                 <br />
-                <ServiceContainer>
+                {/* <ServiceContainer>
                     <ServiceLink onClick={() => scrollTo("service1")}>
                         <FeatherIcon className="cursorOnHover customIcon" icon="file-text" size="60" />
                         <p className="para">Resume Development</p>
@@ -158,7 +158,7 @@ const ServicePage = () => {
                         <FeatherIcon className="cursorOnHover customIcon" icon="clock" size="60" />
                         <p className="para">24x7 Customer Care</p>
                     </ServiceLink>
-                </ServiceContainer>
+                </ServiceContainer> */}
 
 
                 {

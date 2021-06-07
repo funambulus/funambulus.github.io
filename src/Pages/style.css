@@ -107,8 +107,8 @@
 }
 
 .serviceIndImage {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     transform: translate(30px, 30px);
     position: relative;
 }

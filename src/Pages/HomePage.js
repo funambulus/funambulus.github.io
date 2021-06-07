@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import { Card, SlickCard, SlickHeader, SlickPara, SlickItem, SlickRow, FlexContainer, FlexRow, FlexCol } from '../Styles';
 import FeatherIcon from 'feather-icons-react';
+import dianaFernandes from "./../assets/diana-fernandes.webp";
 import slideOneImage from "./../assets/dylan-gillis.webp";
 import testimonalHead from "./../assets/niver-vega.webp";
 import testimonalImage from "./../assets/ben-parker.webp";
@@ -21,12 +22,13 @@ const HomePage = () => {
     };
 
     const data = [
+        // {
+        //     header: 'Synergence',
+        //     quote: "“join us to work together and  to make difference in your field”",
+        //     icon: '',
+        //     link: ''
+        // }, 
         {
-            header: 'Synergence',
-            quote: "“join us to work together and  to make difference in your field”",
-            icon: '',
-            link: ''
-        }, {
             header: 'Attract more recruiters',
             quote: 'Get a powerful resume and make your connect with recruiter',
             icon: '',
@@ -114,11 +116,11 @@ const HomePage = () => {
                 <FlexRow style={{ minHeight: '16vh' }}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
-                            “What makes the experience with Synergence completely worth it is the level
-                            of personalization that helps you present yourself better to recruiters.”
+                            “What makes the experience with Synergence completely worth it is the level of
+                            personalization that helps you present yourself better to recruiters.”
                         </p>
                         <p>
-                            ~ John Doe, Engineer
+                            ~ Akash Kotian
                         </p>
                     </FlexCol>
                     <FlexCol size="2">
@@ -130,15 +132,15 @@ const HomePage = () => {
                 <FlexRow style={{ minHeight: '16vh' }}>
                     <FlexCol size="10" className="testimonials_desc">
                         <p>
-                            “What makes the experience with Synergence completely worth it is the level
-                            of personalization that helps you present yourself better to recruiters.”
+                            “Thanks to the team at Synergence & especially my Coach
+                            who assisted me at every step of getting to my dream role.”
                         </p>
                         <p>
-                            ~ John Doe, Engineer
+                            ~ Diana Fernandes
                         </p>
                     </FlexCol>
                     <FlexCol size="2">
-                        <img src={testimonalImage} alt="profile" className="testimonials_image" />
+                        <img src={dianaFernandes} alt="profile" className="testimonials_image" />
                     </FlexCol>
                 </FlexRow>
             </Card>

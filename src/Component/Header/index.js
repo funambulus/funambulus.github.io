@@ -9,18 +9,19 @@ const Header = () => {
             <FlexRowHeader>
                 <FlexCol size="6" className="companyName">
                     SYNERGENCE
+                    <span>consultants</span>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
                     <Link to="/" className="color-grey">HOME</Link>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
-                    <Link to="/service" className="color-grey">SERVICE</Link>
+                    <Link to="/service" className="color-grey">SERVICES</Link>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
-                    <Link to="/about" className="color-grey">ABOUT</Link>
+                    <Link to="/about" className="color-grey">ABOUT US</Link>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
-                    <Link to="/contact" className="color-grey">CONTACT</Link>
+                    <Link to="/contact" className="color-grey">CONTACT US</Link>
                 </FlexCol>
             </FlexRowHeader>
         </FlexContainer >

@@ -33,8 +33,8 @@ const ContactPage = () => {
                     <img src={contactTopImage} className="contactImage" alt="Photo by damian-zaleski" />
                     <div className="extralayer"></div>
                     <div className="contactTextContainer">
-                        <div className="contactTitle">Contact Synergence</div>
                         <div className="contactInfo">We are glad you’re taking this important step towards accelerating your job search. Our team will be happy to get in touch with you</div>
+                        <div className="contactTitle">Contact Synergence</div>
                     </div>
                 </FlexCol>
             </FlexRow>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, FlexCol, FlexContainer, FlexRow } from '../Styles';
+import dianaFernandes from "./../assets/diana-fernandes.webp";
 import aboutTopImage from "./../assets/annie-spratt.webp";
 import sectionImage from "./../assets/ux-indonesia.webp";
 import testimonalHead from "./../assets/niver-vega.webp";
@@ -86,12 +87,12 @@ const AboutPage = () => {
         <FlexRow style={{ minHeight: '20vh' }}>
           <FlexCol size="10" className="testimonials_desc">
             <p>
-              “What makes the experience with Synergence completely worth it is the level
-              of personalization that helps you present yourself better to recruiters.”
-                        </p>
+              “What makes the experience with Synergence completely worth it is the level of
+              personalization that helps you present yourself better to recruiters.”
+            </p>
             <p>
-              ~ John Doe, Engineer
-                        </p>
+              ~ Akash Kotian
+            </p>
           </FlexCol>
           <FlexCol size="2">
             <img src={testimonalImage} alt="profile" className="testimonials_image" />
@@ -102,15 +103,15 @@ const AboutPage = () => {
         <FlexRow style={{ minHeight: '20vh', justifyContent: 'center' }}>
           <FlexCol size="10" className="testimonials_desc">
             <p>
-              “What makes the experience with Synergence completely worth it is the level
-              of personalization that helps you present yourself better to recruiters.”
-                        </p>
+              “Thanks to the team at Synergence & especially my Coach
+              who assisted me at every step of getting to my dream role.”
+            </p>
             <p>
-              ~ John Doe, Engineer
-                        </p>
+              ~ Diana Fernandes
+            </p>
           </FlexCol>
           <FlexCol size="2">
-            <img src={testimonalImage} alt="profile" className="testimonials_image" />
+            <img src={dianaFernandes} alt="profile" className="testimonials_image" />
           </FlexCol>
         </FlexRow>
       </Card>
