@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FlexCol, FlexContainer, FlexRowHeader } from '../../Styles';
 import './style.css'
 
-const Header = () => {
+const Header = (props) => {
+    let currentPage = props.selected;
     return (
         <FlexContainer className="px-5">
             <FlexRowHeader>
@@ -12,16 +13,24 @@ const Header = () => {
                     <span>consultants</span>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
-                    <Link to="/" className="color-grey">HOME</Link>
+                    <Link to="/"
+                        className={currentPage == 'home' ? "color-grey active" : "color-grey"}
+                    >HOME</Link>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
-                    <Link to="/service" className="color-grey">SERVICES</Link>
+                    <Link to="/service"
+                        className={currentPage == 'service' ? "color-grey active" : "color-grey"}
+                    >SERVICES</Link>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
-                    <Link to="/about" className="color-grey">ABOUT US</Link>
+                    <Link to="/about"
+                        className={currentPage == 'about' ? "color-grey active" : "color-grey"}
+                    >ABOUT US</Link>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
-                    <Link to="/contact" className="color-grey">CONTACT US</Link>
+                    <Link to="/contact"
+                        className={currentPage == 'contact' ? "color-grey active" : "color-grey"}
+                    >CONTACT US</Link>
                 </FlexCol>
             </FlexRowHeader>
         </FlexContainer >

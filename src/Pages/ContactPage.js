@@ -46,13 +46,13 @@ const ContactPage = () => {
             <FlexRow className="formContainer" style={{ alignItems: 'flex-start' }}>
                 <FlexCol size="2" className="formInputs">
                     <label id="l1">Name:</label>
-                    <input id="n1" name="name" type="text" className="contactInputs" value={form.name} onChange={(e) => handleChange(e)} placeholder="Enter Name" />
+                    <input name="name" type="text" className="contactInputs" value={form.name} onChange={(e) => handleChange(e)} placeholder="John Doe" />
                     <label>Mobile Number:</label>
-                    <input name="phone" type="text" className="contactInputs" value={form.phone} onChange={(e) => handleChange(e)} placeholder="Enter Phone" />
+                    <input name="phone" type="text" className="contactInputs" value={form.phone} onChange={(e) => handleChange(e)} placeholder="+91888777999" />
                     <label>Email:</label>
-                    <input name="email" type="text" className="contactInputs" value={form.email} onChange={(e) => handleChange(e)} placeholder="Enter Email" />
+                    <input name="email" type="text" className="contactInputs" value={form.email} onChange={(e) => handleChange(e)} placeholder="johndoe@youremail.com" />
                     <label>Message</label>
-                    <input name="message" type="text" className="contactInputs" value={form.message} onChange={(e) => handleChange(e)} placeholder="Enter Message" />
+                    <input name="message" type="text" className="contactInputs" value={form.message} onChange={(e) => handleChange(e)} placeholder="Any message..." />
                     <button
                         onClick={() => {
                             // console.log(form.name, form.email, 'A New Message from the ' + form.name, form.message)

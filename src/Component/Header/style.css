@@ -37,3 +37,62 @@ a:hover {
     left: 104px;
     color: #b4b2b2;
 }
+
+
+/* Underline css */
+
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Layout */
+
+
+/* Underline styles */
+
+a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+
+/* Fade in */
+
+.headerLink>.active {
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+}
+
+.headerLink>.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: #70e9f1;
+    border-radius: 50px;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 0;
+    overflow: hidden;
+    animation: slideIn 0.8s normal forwards;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 1;
+        transform: translate3d(-100%, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

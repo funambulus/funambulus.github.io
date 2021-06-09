@@ -53,14 +53,14 @@ export const SlickPara = styled.div`
   font-size: ${(props) => props.size};
   max-width: 450px;
   text-align: right;
-  color: white;
+  color: #afafaf;
 `;
 export const Card = styled.div`
   margin: 15px 20%;
   padding: 30px;
   min-height: 25vh;
   max-height: 40vh;
-  box-shadow: 2px 5px 20px -3px #00000033;
+  box-shadow: ${(props) => props.noshadow ? 'none' : '2px 5px 20px -3px #00000033'};
   margin-bottom: 40px;
   border-radius: 5px;
   overflow: hidden;
@@ -103,6 +103,7 @@ export const ServiceInfoHead = styled.div`
   font-size: 3vw;
   font-weight: bold;
   text-align: center;
+  color:#373a40;
 `;
 
 export const Divider = styled.div`

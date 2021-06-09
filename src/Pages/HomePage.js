@@ -1,13 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 import { Card, SlickCard, SlickHeader, SlickPara, SlickItem, SlickRow, FlexContainer, FlexRow, FlexCol } from '../Styles';
 import FeatherIcon from 'feather-icons-react';
-import dianaFernandes from "./../assets/diana-fernandes.webp";
-import slideOneImage from "./../assets/dylan-gillis.webp";
-import testimonalHead from "./../assets/niver-vega.webp";
+import dianaFernandes from "./../assets/customers/diana-fernandes.webp";
+import slideOne from "./../assets/attractrecruiters/pexels-edmond-dantès-4344860.jpg";
+import slideTwo from "./../assets/improve-branding/austin-distel-selected.jpg";
+import slideThird from "./../assets/career-counseling/pexels-mentatdgt-selected.jpg";
+import slideFour from "./../assets/accelerate-your-job/pexels-andrea-piacquadio-selected.jpg";
+
+
+import testimonalHead from "./../assets/services/bram-naus-customers.jpg";
+// import testimonalHead from "./../assets/niver-vega.webp";
 import testimonalImage from "./../assets/ben-parker.webp";
 import "./style.css";
 import { useHistory } from 'react-router';
+
 
 const HomePage = () => {
 
@@ -32,22 +39,22 @@ const HomePage = () => {
             header: 'Attract more recruiters',
             quote: 'Get a powerful resume and make your connect with recruiter',
             icon: '',
-            link: ''
+            link: slideOne
         }, {
             header: 'Improve Personal Branding',
             quote: 'Learn how to build an all-star profile on job portals & increase your network',
             icon: '',
-            link: ''
+            link: slideTwo
         }, {
             header: 'Career Counseling',
             quote: 'Understand your value proposition, your strengths and areas of development',
             icon: '',
-            link: ''
+            link: slideThird
         }, {
             header: 'Accelerate your job search ',
             quote: 'Be market ready, look good on paper, feel good at interviews',
             icon: '',
-            link: ''
+            link: slideFour
         }
     ]
 
@@ -61,13 +68,16 @@ const HomePage = () => {
                 <Slider {...settings} style={{ minHeight: '70vh' }}>
                     {
                         slideData.map((obj, i) => {
+                            console.log(obj.link)
                             return (
                                 <div key={i}>
                                     <div style={{
-                                        backgroundImage: 'url(' + slideOneImage + ')',
+                                        // backgroundImage: `url(${slideOne})`,
+                                        backgroundImage: `url(${obj.link})`,
                                         backgroundSize: 'cover',
                                         backgroundRepeat: 'no-repeat',
-                                        backgroundPositionY: 'top'
+                                        backgroundPositionY: 'center',
+                                        cursor: 'grab'
                                     }}>
                                         <SlickCard>
                                             <SlickHeader size="3.8vw" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Card, FlexCol, FlexContainer, FlexRow } from '../Styles';
-import dianaFernandes from "./../assets/diana-fernandes.webp";
-import aboutTopImage from "./../assets/annie-spratt.webp";
-import sectionImage from "./../assets/ux-indonesia.webp";
-import testimonalHead from "./../assets/niver-vega.webp";
+import dianaFernandes from "./../assets/customers/diana-fernandes.webp";
+import aboutTopImage from "./../assets/about-us/pexels-rodnae-productions-7581127.jpg";
+import testimonalHead from "./../assets/services/bram-naus-customers.jpg";
 import testimonalImage from "./../assets/ben-parker.webp";
 
 const AboutPage = () => {
@@ -28,28 +27,29 @@ const AboutPage = () => {
         </FlexCol>
       </FlexRow>
       <br />
+      {/* <br />
       <br />
       <br />
-      <br />
-      <br />
-      <Card style={{ marginRight: '20%', marginTop: 50, padding: 0, overflow: 'hidden' }}>
+      <br /> */}
+      <Card noshadow style={{ marginRight: '20%', marginTop: 50, padding: 0, overflow: 'hidden' }}>
         <FlexRow style={{ minHeight: '20vh', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-          <FlexCol size="2" className="sectionImage">
-            <img src={aboutTopImage} className="leftSectionImage" />
+          <FlexCol size="1" className="sectionImage">
+            {/* <img src={aboutTopImage} className="leftSectionImage" /> */}
+            <div className="serialNo">1</div>
           </FlexCol>
           <FlexCol size="2" className="sectionDesc">
             <p style={{ margin: 0, fontSize: 18 }}>
               We have helped professionals identify their strengths, target A-List employers,
               get their profiles shortlisted and ace interviews to get offered on the terms
-              they desire.
-                        </p>
+              they desire.</p>
           </FlexCol>
         </FlexRow>
       </Card>
-      <Card style={{ marginRight: '20%', marginTop: 50, padding: 0, overflow: 'hidden' }}>
+      <Card noshadow style={{ marginRight: '20%', marginTop: 50, padding: 0, overflow: 'hidden' }}>
         <FlexRow style={{ minHeight: '20vh', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-          <FlexCol size="2" className="sectionImage">
-            <img src={sectionImage} className="leftSectionImage" />
+          <FlexCol size="1" className="sectionImage">
+            {/* <img src={sectionImage} className="leftSectionImage" /> */}
+            <div className="serialNo">2</div>
           </FlexCol>
           <FlexCol size="2" className="sectionDesc">
             <p style={{ margin: 0, fontSize: 18 }}>

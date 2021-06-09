@@ -31,13 +31,27 @@ function App() {
 
   return (
     <Fragment>
-      <Header />
       <Switch>
-        <Route exact path="/" render={props => <HomePage />} />
-        <Route exact path="/service" render={props => <ServicePage />} />
-        <Route exact path="/about" render={props => <AboutPage />} />
-        <Route exact path="/contact" render={props => <ContactPage />} />
-        <Route exact render={props => <NotFound />} />
+        <Route exact path="/">
+          <Header selected="home" />
+          <HomePage />
+        </Route>
+        <Route exact path="/service" >
+          <Header selected="service" />
+          <ServicePage />
+        </Route>
+        <Route exact path="/about" >
+          <Header selected="about" />
+          <AboutPage />
+        </Route>
+        <Route exact path="/contact">
+          <Header selected="contact" />
+          <ContactPage />
+        </Route>
+        <Route exact>
+          <Header />
+          <NotFound />
+        </Route>
       </Switch>
       <Footer />
     </Fragment>

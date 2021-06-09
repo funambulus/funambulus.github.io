@@ -1,8 +1,27 @@
 import React, { Suspense } from 'react';
-import { FlexCol, FlexContainer, FlexRow, ServiceContainer, ServiceLink, ServicesInfo, ServiceInfoHead, Divider, ServiceInfoBody } from '../Styles';
-import serviceTopImage from "./../assets/markus-spiske.webp"
-import serviceIndImage from "./../assets/gabrielle-henderson.webp";
-import FeatherIcon from 'feather-icons-react';
+import { FlexCol, FlexContainer, FlexRow, ServicesInfo, ServiceInfoHead, Divider, ServiceInfoBody } from '../Styles';
+
+
+// import service11 from "./../assets/application-assi/magnet-me-beCkhUB5aIA-unsplash.jpg";
+// import service21 from "./../assets/linkedIn-assi/inlytics-linkedin-analytics-tool-RJT2EWPR0d0-unsplash.jpg";
+// import service32 from "./../assets/resume-development/pexels-lukas-590016.jpg";
+// import service41 from "./../assets/coaching/kobu-agency-7okkFhxrxNw-unsplash.jpg";
+// import service43 from "./../assets/coaching/pexels-startup-stock-photos-7374.jpg";
+// import service52 from "./../assets/interview-tips/pexels-mentatdgt-1399282.jpg";
+// import service53 from "./../assets/interview-tips/van-tay-media-TFFn3BYLc5s-unsplash (1).jpg";
+// import service62 from "./../assets/offer-negotiation/pexels-sora-shimazaki-5668834.jpg";
+// import service71 from "./../assets/experts-on-Call/nordwood-themes-q8U1YgBaRQk-unsplash.jpg";
+import service1 from "./../assets/application-assi/pexels-sora-shimazaki-5668858.jpg";
+import service2 from "./../assets/linkedIn-assi/souvik-banerjee-JLj_NbvlDDo-unsplash.jpg";
+import service3 from "./../assets/resume-development/markus-winkler-7iSEHWsxPLw-unsplash.jpg";
+import service4 from "./../assets/coaching/pexels-mentatdgt-1311518.jpg";
+import service5 from "./../assets/interview-tips/jonathan-francisca-YHbcum51JB0-unsplash.jpg";
+import service6 from "./../assets/offer-negotiation/markus-winkler-EX9QVVFtQxw-unsplash.jpg";
+import service7 from "./../assets/experts-on-Call/pexels-anna-shvets-4226256.jpg";
+
+
+import serviceTopImage from "./../assets/services/joao-ferrao-4YzrcDNcRVg-unsplash.jpg";
+// import FeatherIcon from 'feather-icons-react';
 import { useHistory } from 'react-router';
 
 const ServicePage = () => {
@@ -11,17 +30,6 @@ const ServicePage = () => {
     }
     const history = useHistory();
     const service = [
-        {
-            name: "Resume Development",
-            desc: <>
-                The Resume Screening round is the first and most critical step in getting your application to the
-                next level. <br /><br /> What you can expect from us:<br />
-                <ul>
-                    <li>Your resume will be written by a team of seasoned experts</li>
-                    <li>They will make sure that your Resume presents your strong points, achievements & key skills in a recruiter-friendly format</li>
-                </ul>
-            </>
-        },
         {
             name: "Application Assistance",
             desc: <>
@@ -33,7 +41,24 @@ const ServicePage = () => {
                     <li>Assistance with cover notes</li>
                     <li>How to match your cover note with the job description</li>
                 </ul>
-            </>
+            </>,
+            image: service1
+        },
+        {
+            name: "Coaching",
+            desc: <>
+                We help you become the best version of yourself.<br />
+                <br />
+                <ul>
+                    <li>
+                        Deep understanding of your career path, decisions, strengths, areas of development to build a strong value proposition for recruiters
+                    </li>
+                </ul>
+                <div style={{ textAlign: 'center', paddingRight: 20 }}>
+                    <button className="buttonStyled" onClick={() => history.push("/contact")}>Know More</button>
+                </div>
+            </>,
+            image: service4
         },
         {
             name: "LinkedIn Profile & Network Building",
@@ -45,7 +70,20 @@ const ServicePage = () => {
                     <li>Guidance on how to build a LinkedIn profile that makes an impact on recruiters & your network</li>
                     <li>Keywords that match your role</li>
                 </ul>
-            </>
+            </>,
+            image: service2
+        },
+        {
+            name: "Resume Development",
+            desc: <>
+                The Resume Screening round is the first and most critical step in getting your application to the
+                next level. <br /><br /> What you can expect from us:<br />
+                <ul>
+                    <li>Your resume will be written by a team of seasoned experts</li>
+                    <li>They will make sure that your Resume presents your strong points, achievements & key skills in a recruiter-friendly format</li>
+                </ul>
+            </>,
+            image: service3
         },
         {
             name: "Interview Preparation",
@@ -59,7 +97,8 @@ const ServicePage = () => {
                     <li>Dos & Don’ts including body language, articulation, standard FAQs & responses</li>
                     <li>How to get a video interview right </li>
                 </ul>
-            </>
+            </>,
+            image: service5
         },
         {
             name: "Offer Negotiation",
@@ -73,19 +112,8 @@ const ServicePage = () => {
                     <li>How to read an offer – ESOPs, Flexi Benefits, etc</li>
                     <li>What questions to ask to be 100% clear on what you sign on</li>
                 </ul>
-            </>
-        },
-        {
-            name: "Coaching",
-            desc: <>
-                We help you become the best version of yourself.<br />
-                <br />
-                <ul>
-                    <li>
-                        Deep understanding of your career path, decisions, strengths, areas of development to build a strong value proposition for recruiters
-                    </li>
-                </ul>
-            </>
+            </>,
+            image: service6
         },
         {
             name: "Expert on Call",
@@ -95,7 +123,8 @@ const ServicePage = () => {
                 <div style={{ textAlign: 'center', paddingRight: 20 }}>
                     <button className="buttonStyled" onClick={() => history.push("/contact")}>Know More</button>
                 </div>
-            </>
+            </>,
+            image: service7
         },
     ];
 
@@ -121,45 +150,6 @@ const ServicePage = () => {
                     </FlexCol>
                 </FlexRow>
                 <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                {/* <ServiceContainer>
-                    <ServiceLink onClick={() => scrollTo("service1")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="file-text" size="60" />
-                        <p className="para">Resume Development</p>
-                    </ServiceLink>
-                    <ServiceLink onClick={() => scrollTo("service2")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="help-circle" size="60" />
-                        <p className="para">Application Assistance</p>
-                    </ServiceLink>
-                    <ServiceLink onClick={() => scrollTo("service3")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="trending-up" size="60" />
-                        <p className="para">Network Building</p>
-                    </ServiceLink>
-                    <ServiceLink onClick={() => scrollTo("service4")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="file-text" size="60" />
-                        <p className="para">Resume Development</p>
-                    </ServiceLink>
-                    <ServiceLink onClick={() => scrollTo("service5")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="alert-octagon" size="60" />
-                        <p className="para">Offer Negotiation</p>
-                    </ServiceLink>
-                    <ServiceLink onClick={() => scrollTo("service6")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="monitor" size="60" />
-                        <p className="para">Coaching</p>
-                    </ServiceLink>
-                    <ServiceLink onClick={() => scrollTo("service7")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="phone" size="60" />
-                        <p className="para">Expert on Call</p>
-                    </ServiceLink>
-                    <ServiceLink onClick={() => scrollTo("service1")}>
-                        <FeatherIcon className="cursorOnHover customIcon" icon="clock" size="60" />
-                        <p className="para">24x7 Customer Care</p>
-                    </ServiceLink>
-                </ServiceContainer> */}
-
 
                 {
                     service.map((v, i) => {
@@ -172,8 +162,8 @@ const ServicePage = () => {
                                         <FlexCol size="2" style={{ maxWidth: '60%', paddingRight: 40, fontSize: 18 }}>
                                             {v.desc}
                                         </FlexCol>
-                                        <FlexCol size="1" style={{ maxWidth: '40%', position: 'relative' }}>
-                                            <img src={serviceIndImage} className="serviceIndImage" alt="by gabrielle-henderson" />
+                                        <FlexCol size="2" style={{ maxWidth: '40%', position: 'relative' }}>
+                                            <img src={v.image} className="serviceIndImage" alt="by gabrielle-henderson" />
                                             <div className="serviceIndShade"></div>
                                         </FlexCol>
                                     </ServicesInfo>
