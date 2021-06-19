@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card, FlexCol, FlexContainer, FlexRow } from '../Styles';
 import dianaFernandes from "./../assets/customers/diana-fernandes.webp";
-import aboutTopImage from "./../assets/about-us/pexels-rodnae-productions-7581127.jpg";
-import testimonalHead from "./../assets/services/bram-naus-customers.jpg";
-import testimonalImage from "./../assets/ben-parker.webp";
+import aboutTopImage from "./../assets/about-us/pexels-rodnae-productions-7581127.webp";
+import testimonalHead from "./../assets/services/bram-naus-customers.webp";
+import varunKotian from "./../assets/customers/varun_kotian.webp";
 
 const AboutPage = () => {
   return (
@@ -22,7 +22,7 @@ const AboutPage = () => {
               Synergence is a team of Career experts passionate about helping professionals pan-India
               in their job search journey. We have over 400 years of collective experience across our
               Career Coaches spanning over 16 industries.
-                        </p>
+            </p>
           </div>
         </FlexCol>
       </FlexRow>
@@ -56,7 +56,7 @@ const AboutPage = () => {
               We have a large list of companies empanelled with us to receive the talent we represent.
               We leverage our relationships to ensure Talent Acquisition leaders consider our
               candidate’s applications on priority.
-                        </p>
+            </p>
           </FlexCol>
         </FlexRow>
       </Card>
@@ -80,7 +80,7 @@ const AboutPage = () => {
             }}
           >
             Our Satisfied Customers
-                        </div>
+          </div>
         </FlexCol>
       </FlexRow>
       <Card>
@@ -95,7 +95,7 @@ const AboutPage = () => {
             </p>
           </FlexCol>
           <FlexCol size="2">
-            <img src={testimonalImage} alt="profile" className="testimonials_image" />
+            <img src={varunKotian} alt="profile" className="testimonials_image" />
           </FlexCol>
         </FlexRow>
       </Card>

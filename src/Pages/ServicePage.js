@@ -1,26 +1,16 @@
 import React, { Suspense } from 'react';
 import { FlexCol, FlexContainer, FlexRow, ServicesInfo, ServiceInfoHead, Divider, ServiceInfoBody } from '../Styles';
 
-
-// import service11 from "./../assets/application-assi/magnet-me-beCkhUB5aIA-unsplash.jpg";
-// import service21 from "./../assets/linkedIn-assi/inlytics-linkedin-analytics-tool-RJT2EWPR0d0-unsplash.jpg";
-// import service32 from "./../assets/resume-development/pexels-lukas-590016.jpg";
-// import service41 from "./../assets/coaching/kobu-agency-7okkFhxrxNw-unsplash.jpg";
-// import service43 from "./../assets/coaching/pexels-startup-stock-photos-7374.jpg";
-// import service52 from "./../assets/interview-tips/pexels-mentatdgt-1399282.jpg";
-// import service53 from "./../assets/interview-tips/van-tay-media-TFFn3BYLc5s-unsplash (1).jpg";
-// import service62 from "./../assets/offer-negotiation/pexels-sora-shimazaki-5668834.jpg";
-// import service71 from "./../assets/experts-on-Call/nordwood-themes-q8U1YgBaRQk-unsplash.jpg";
-import service1 from "./../assets/application-assi/pexels-sora-shimazaki-5668858.jpg";
-import service2 from "./../assets/linkedIn-assi/souvik-banerjee-JLj_NbvlDDo-unsplash.jpg";
-import service3 from "./../assets/resume-development/markus-winkler-7iSEHWsxPLw-unsplash.jpg";
-import service4 from "./../assets/coaching/pexels-mentatdgt-1311518.jpg";
-import service5 from "./../assets/interview-tips/jonathan-francisca-YHbcum51JB0-unsplash.jpg";
-import service6 from "./../assets/offer-negotiation/markus-winkler-EX9QVVFtQxw-unsplash.jpg";
-import service7 from "./../assets/experts-on-Call/pexels-anna-shvets-4226256.jpg";
+import service1 from "./../assets/application-assi/pexels-sora-shimazaki-5668858.webp";
+import service2 from "./../assets/linkedIn-assi/souvik-banerjee-JLj_NbvlDDo-unsplash.webp";
+import service3 from "./../assets/resume-development/markus-winkler-7iSEHWsxPLw-unsplash.webp";
+import service4 from "./../assets/coaching/pexels-mentatdgt-1311518.webp";
+import service5 from "./../assets/interview-tips/jonathan-francisca-YHbcum51JB0-unsplash.webp";
+import service6 from "./../assets/offer-negotiation/markus-winkler-EX9QVVFtQxw-unsplash.webp";
+import service7 from "./../assets/experts-on-Call/pexels-anna-shvets-4226256.webp";
 
 
-import serviceTopImage from "./../assets/services/joao-ferrao-4YzrcDNcRVg-unsplash.jpg";
+import serviceTopImage from "./../assets/services/joao-ferrao-4YzrcDNcRVg-unsplash.webp";
 // import FeatherIcon from 'feather-icons-react';
 import { useHistory } from 'react-router';
 
@@ -65,7 +55,7 @@ const ServicePage = () => {
             desc: <>
                 Job portals are a great way to stay connected and relevant to recruiters. Many recruiters check LinkedIn to see recommendations, etc. that are not on your Resume. <br />
                 <br />
-            What you can expect from us:<br />
+                What you can expect from us:<br />
                 <ul>
                     <li>Guidance on how to build a LinkedIn profile that makes an impact on recruiters & your network</li>
                     <li>Keywords that match your role</li>
@@ -145,7 +135,7 @@ const ServicePage = () => {
                                 A service business is a business model that offers intangible value beyond a physical product.
                                 Advanced economies have shifted towards a service-based economy whereby the total value of
                                 services may exceed the total value of products as a percentage of GDP.
-                        </p>
+                            </p>
                         </div>
                     </FlexCol>
                 </FlexRow>

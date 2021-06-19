@@ -3,15 +3,14 @@ import Slider from "react-slick";
 import { Card, SlickCard, SlickHeader, SlickPara, SlickItem, SlickRow, FlexContainer, FlexRow, FlexCol } from '../Styles';
 import FeatherIcon from 'feather-icons-react';
 import dianaFernandes from "./../assets/customers/diana-fernandes.webp";
-import slideOne from "./../assets/attractrecruiters/pexels-edmond-dantès-4344860.jpg";
-import slideTwo from "./../assets/improve-branding/austin-distel-selected.jpg";
-import slideThird from "./../assets/career-counseling/pexels-mentatdgt-selected.jpg";
-import slideFour from "./../assets/accelerate-your-job/pexels-andrea-piacquadio-selected.jpg";
+import varunKotian from "./../assets/customers/varun_kotian.webp";
+import slideOne from "./../assets/attractrecruiters/pexels-edmond-dantès-4344860.webp";
+import slideTwo from "./../assets/improve-branding/austin-distel-selected.webp";
+import slideThird from "./../assets/career-counseling/pexels-mentatdgt-selected.webp";
+import slideFour from "./../assets/accelerate-your-job/pexels-andrea-piacquadio-selected.webp";
 
 
-import testimonalHead from "./../assets/services/bram-naus-customers.jpg";
-// import testimonalHead from "./../assets/niver-vega.webp";
-import testimonalImage from "./../assets/ben-parker.webp";
+import testimonalHead from "./../assets/services/bram-naus-customers.webp";
 import "./style.css";
 import { useHistory } from 'react-router';
 
@@ -119,7 +118,7 @@ const HomePage = () => {
                         }}
                     >
                         Our Satisfied Customers
-                        </div>
+                    </div>
                 </FlexCol>
             </FlexRow>
             <Card data-aos="fade-in">
@@ -134,7 +133,7 @@ const HomePage = () => {
                         </p>
                     </FlexCol>
                     <FlexCol size="2">
-                        <img src={testimonalImage} alt="profile" className="testimonials_image" />
+                        <img src={varunKotian} alt="profile" className="testimonials_image" />
                     </FlexCol>
                 </FlexRow>
             </Card>

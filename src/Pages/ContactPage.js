@@ -1,8 +1,8 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import sendNodeMail from '../Constant/Email/sendEmailJS';
 import { FlexCol, FlexContainer, FlexRow } from '../Styles';
-import contactTopImage from "./../assets/damian-zaleski.webp";
-import contactTopImage2 from "./../assets/tamas-tuzes-katai.webp";
+import contactTopImage from "./../assets/contacts/damian-zaleski.webp";
+import contactTopImage2 from "./../assets/contacts/tamas-tuzes-katai.webp";
 
 const ContactPage = () => {
 
