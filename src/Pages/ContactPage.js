@@ -33,7 +33,7 @@ const ContactPage = () => {
           <img
             src={contactTopImage}
             className="contactImage"
-            alt="Photo by damian-zaleski"
+            alt="damian-zaleski"
           />
           <div className="extralayer"></div>
           <div className="contactTextContainer">
@@ -112,7 +112,11 @@ const ContactPage = () => {
           </button>
         </FlexCol>
         <FlexCol size="2" className="formImageContainer">
-          <img src={contactTopImage2} className="contactImage2" />
+          <img
+            src={contactTopImage2}
+            className="contactImage2"
+            alt="second-contacts"
+          />
         </FlexCol>
       </FlexRow>
     </FlexContainer>
