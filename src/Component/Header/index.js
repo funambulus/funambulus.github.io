@@ -10,7 +10,7 @@ const Header = (props) => {
             <FlexRowHeader>
                 <FlexCol size="6" className="companyName">
                     SYNERGENCE
-                    <span>consultants</span>
+                    <span>Consultants</span>
                 </FlexCol>
                 <FlexCol size="1" className="headerLink">
                     <Link to="/"

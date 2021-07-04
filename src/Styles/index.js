@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FlexContainer = styled.div`
   min-height: 100px;
@@ -40,8 +40,9 @@ export const SlickCard = styled.div`
 `;
 export const SlickItem = styled.div`
   font-size: ${(props) => props.size};
-  padding: 10px 0;
+  padding: 16px 0;
   color: white;
+  justifycontent: center;
 `;
 export const SlickHeader = styled.div`
   font-size: ${(props) => props.size};
@@ -53,14 +54,15 @@ export const SlickPara = styled.div`
   font-size: ${(props) => props.size};
   max-width: 450px;
   text-align: right;
-  color: #afafaf;
+  color: #e8e8e8;
 `;
 export const Card = styled.div`
   margin: 15px 20%;
   padding: 30px;
   min-height: 25vh;
   max-height: 40vh;
-  box-shadow: ${(props) => props.noshadow ? 'none' : '2px 5px 20px -3px #00000033'};
+  box-shadow: ${(props) =>
+    props.noshadow ? "none" : "2px 5px 20px -3px #00000033"};
   margin-bottom: 40px;
   border-radius: 5px;
   overflow: hidden;
@@ -74,21 +76,21 @@ export const ServiceContainer = styled.div`
   margin-top: 120px;
 `;
 export const ServiceLink = styled.div`
-    flex:1;
-    flex-direction:column;
-    min-height: 135px;
-    min-width: 24%;
-    max-width: 24%;
-    padding: 24px 0;
-    text-align: center;
-    background:#686D76;
-    // box-shadow: 0 4px 4px 0 #0000003d;
-    margin-bottom:8px;
-    cursor:pointer;
-    border-radius: 5px;
-    &:hover{
-        box-shadow: 0 4px 4px 1px #00000060;
-    }
+  flex: 1;
+  flex-direction: column;
+  min-height: 135px;
+  min-width: 24%;
+  max-width: 24%;
+  padding: 24px 0;
+  text-align: center;
+  background: #686d76;
+  // box-shadow: 0 4px 4px 0 #0000003d;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0 4px 4px 1px #00000060;
+  }
 `;
 export const ServicesInfo = styled.div`
   display: flex;
@@ -103,7 +105,7 @@ export const ServiceInfoHead = styled.div`
   font-size: 3vw;
   font-weight: bold;
   text-align: center;
-  color:#373a40;
+  color: #373a40;
 `;
 
 export const Divider = styled.div`

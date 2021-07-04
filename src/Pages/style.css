@@ -41,6 +41,7 @@
     width: 100%;
     filter: brightness(0.5);
     object-fit: cover;
+    object-position: top;
 }
 
 .aboutTopCard {
@@ -74,7 +75,7 @@
     background: white;
     padding: 40px 60px;
     font-size: 1.2vw;
-    text-align: justify;
+    text-align: left;
     border: 1px solid white;
 }
 
@@ -90,7 +91,7 @@
 
 .sectionDesc {
     padding: 35px;
-    text-align: justify;
+    text-align: left;
 }
 
 .para {
