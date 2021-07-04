@@ -77,7 +77,7 @@ const HomePage = () => {
     },
   ];
 
-  const [slideData, _] = useState(data);
+  const [slideData] = useState(data);
 
   return (
     <FlexContainer>

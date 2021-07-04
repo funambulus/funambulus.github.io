@@ -22,9 +22,9 @@ import serviceTopImage from "./../assets/services/joao-ferrao-4YzrcDNcRVg-unspla
 import { useHistory } from "react-router";
 
 const ServicePage = () => {
-  const scrollTo = (id) => {
-    document.querySelector("#" + id).scrollIntoView({ behavior: "smooth" });
-  };
+  //   const scrollTo = (id) => {
+  //     document.querySelector("#" + id).scrollIntoView({ behavior: "smooth" });
+  //   };
   const history = useHistory();
   const service = [
     {

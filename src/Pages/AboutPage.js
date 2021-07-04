@@ -18,7 +18,7 @@ const AboutPage = () => {
           <img
             src={aboutTopImage}
             className="aboutTopImage"
-            alt="Photo by annie-spratt"
+            alt="annie-spratt"
             loading="eager"
           />
           <div className="aboutTopCard">
