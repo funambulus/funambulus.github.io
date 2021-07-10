@@ -49,7 +49,8 @@
     top: 45%;
     left: 12%;
     right: 35%;
-    width: auto;
+    width: 50%;
+    font-size: 16px;
     min-height: 300px;
     z-index: 99;
     margin-bottom: 40px;
@@ -74,14 +75,14 @@
     box-shadow: 3px 3px 6px 0 #0000003d;
     background: white;
     padding: 40px 60px;
-    font-size: 1.2vw;
+    font-size: 16px;
     text-align: left;
     border: 1px solid white;
 }
 
 
 /* .sectionImage {
-    min-width: 50%;
+min-width: 50%;
 } */
 
 .leftSectionImage {
@@ -146,6 +147,7 @@
     z-index: -1;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    object-fit: cover;
 }
 
 .extralayer {
@@ -161,7 +163,7 @@
     position: absolute;
     top: 30%;
     left: 15%;
-    width: 700px;
+    width: 50%;
     height: 200px;
     color: white;
     z-index: 99;
@@ -177,6 +179,15 @@
     color: white;
     font-size: 40px;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactInfo {
+        font-size: 24px;
+    }
+    .formImageContainer {
+        display: none;
+    }
 }
 
 .contactFormTitle {
@@ -200,7 +211,7 @@
 
 .formInputs>label {
     color: #373A40;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     width: 80%;
 }
@@ -210,7 +221,7 @@
     border-bottom: 2px solid #373A40;
     margin: 12px 0;
     width: 80%;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .formInputs>.contactInputs:focus {
@@ -263,4 +274,40 @@
     color: white;
     background: #70E9F1;
     transition: 0.4s ease-in-out;
+}
+
+.service_list {
+    position: absolute;
+    right: 48px;
+    bottom: 8%;
+    margin: auto;
+    padding-bottom: 2%;
+    color: #FFF;
+    width: 30%;
+}
+
+.service_list>ul>li {
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutTopCard {
+        width: 80%;
+    }
+    .service_list {
+        display: none;
+    }
+    .hide-on-smaller-screens {
+        display: none;
+    }
+    .expand-width {
+        width: 80%;
+        max-width: 100%!important;
+    }
+    .justify-content-center {
+        justify-content: center!important;
+    }
 }

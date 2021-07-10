@@ -22,9 +22,9 @@ import serviceTopImage from "./../assets/services/joao-ferrao-4YzrcDNcRVg-unspla
 import { useHistory } from "react-router";
 
 const ServicePage = () => {
-  //   const scrollTo = (id) => {
-  //     document.querySelector("#" + id).scrollIntoView({ behavior: "smooth" });
-  //   };
+  const scrollTo = (id) => {
+    document.querySelector("#" + id).scrollIntoView({ behavior: "smooth" });
+  };
   const history = useHistory();
   const service = [
     {
@@ -50,7 +50,6 @@ const ServicePage = () => {
       desc: (
         <>
           We help you become the best version of yourself.
-          <br />
           <br />
           <ul>
             <li>
@@ -204,6 +203,17 @@ const ServicePage = () => {
                 of GDP.
               </p>
             </div>
+            <div className="service_list">
+              <ul>
+                {service.map((v, i) => {
+                  return (
+                    <li key={i} onClick={() => scrollTo("service" + (i + 1))}>
+                      {v.name}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </FlexCol>
         </FlexRow>
         <br />
@@ -218,15 +228,17 @@ const ServicePage = () => {
               <ServiceInfoHead>{v.name}</ServiceInfoHead>
               <Divider></Divider>
               <ServiceInfoBody>
-                <ServicesInfo>
+                <ServicesInfo className="justify-content-center">
                   <FlexCol
                     size="2"
+                    className="expand-width"
                     style={{ maxWidth: "60%", paddingRight: 40, fontSize: 18 }}
                   >
                     {v.desc}
                   </FlexCol>
                   <FlexCol
                     size="2"
+                    className="hide-on-smaller-screens"
                     style={{ maxWidth: "40%", position: "relative" }}
                   >
                     <img
