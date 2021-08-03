@@ -93,7 +93,6 @@ const ContactPage = () => {
           />
           <button
             onClick={() => {
-              // console.log(form.name, form.email, 'A New Message from the ' + form.name, form.message)
               if (
                 form &&
                 form.name &&
