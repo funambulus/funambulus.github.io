@@ -188,6 +188,9 @@ min-width: 50%;
     .formImageContainer {
         display: none;
     }
+    .testimonials_image {
+        display: none;
+    }
 }
 
 .contactFormTitle {
@@ -296,9 +299,13 @@ min-width: 50%;
 @media only screen and (max-width: 768px) {
     .aboutTopCard {
         width: 80%;
+        top: 160px;
     }
     .service_list {
         display: none;
+    }
+    .know-more-container {
+        text-align: left!important;
     }
     .hide-on-smaller-screens {
         display: none;
@@ -309,5 +316,12 @@ min-width: 50%;
     }
     .justify-content-center {
         justify-content: center!important;
+    }
+    .testimonials_desc>p:nth-child(1) {
+        font-size: 2vw;
+        text-align: left;
+    }
+    .sectionImage {
+        display: none;
     }
 }
