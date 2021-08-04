@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div
       style={{
-        background: "#EEEEEE",
+        background: "#70e9f1",
         marginTop: 120,
         minHeight: 10,
         width: "100%",
