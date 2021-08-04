@@ -1,2 +1,0 @@
-(this.webpackJsonpfunambulus=this.webpackJsonpfunambulus||[]).push([[12],{75:function(e,n,t){"use strict";t.r(n);t(0);var i=t(1);n.default=function(){return Object(i.jsx)("div",{style:{background:"#EEEEEE",marginTop:120,minHeight:10,width:"100%",padding:"10px 0",textAlign:"center"},children:"@2021 Synergence. All rights reserved."})}}}]);
-//# sourceMappingURL=12.0bcbf3f9.chunk.js.map
