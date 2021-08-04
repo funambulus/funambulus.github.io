@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import {
@@ -27,7 +27,6 @@ const HomePage = () => {
   const settings = {
     dots: true,
     infinite: true,
-    lazyLoad: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -63,212 +62,71 @@ const HomePage = () => {
     },
   ];
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0, // could be negative value
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
-    <FlexContainer>
+    <FlexContainer data-aos="fade-in" data-aos-duration="400">
       <SlickRow>
         <Slider {...settings} style={{ minHeight: "70vh" }}>
           {/* First Slide */}
-          <div>
-            <div
-              style={{
-                backgroundImage: `url(${slideOne})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPositionY: "center",
-                cursor: "grab",
-              }}
-            >
-              <SlickCard>
-                <SlickHeader
-                  size="3.8vw"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  data-aos-duration="1000"
-                >
-                  {data[0].header}
-                </SlickHeader>
-                <SlickPara
-                  size="1.2vw"
-                  data-aos="fade-right"
-                  data-aos-delay="300"
-                  data-aos-duration="1000"
-                >
-                  {data[0].quote}
-                </SlickPara>
-                <SlickItem size="1.2vw">
-                  <Link to="/service">
-                    <span
-                      style={{
-                        color: "white",
-                        position: "relative",
-                        bottom: 12,
-                      }}
-                    >
-                      See More
-                    </span>
-                    <FeatherIcon
-                      style={{ stroke: "#FFF" }}
-                      icon="chevron-right"
-                      size="32"
-                    />
-                  </Link>
-                </SlickItem>
-              </SlickCard>
+          {data.map((v, i) => (
+            <div key={i}>
+              <div
+                style={{
+                  backgroundImage: `url(${v.link})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPositionY: "center",
+                  cursor: "grab",
+                }}
+              >
+                <SlickCard>
+                  <SlickHeader
+                    size="3.8vw"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
+                  >
+                    {v.header}
+                  </SlickHeader>
+                  <SlickPara
+                    size="1.2vw"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                    data-aos-duration="1000"
+                  >
+                    {v.quote}
+                  </SlickPara>
+                  <SlickItem size="1.2vw">
+                    <Link to="/service">
+                      <span
+                        style={{
+                          color: "white",
+                          position: "relative",
+                          bottom: 12,
+                        }}
+                      >
+                        See More
+                      </span>
+                      <FeatherIcon
+                        style={{ stroke: "#FFF" }}
+                        icon="chevron-right"
+                        size="32"
+                      />
+                    </Link>
+                  </SlickItem>
+                </SlickCard>
+              </div>
             </div>
-          </div>
-          {/* Second Slide */}
-          <div>
-            <div
-              style={{
-                backgroundImage: `url(${slideTwo})`,
-                // backgroundImage: `url(${obj.link})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPositionY: "center",
-                cursor: "grab",
-              }}
-            >
-              <SlickCard>
-                <SlickHeader
-                  size="3.8vw"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  data-aos-duration="1000"
-                >
-                  {data[1].header}
-                </SlickHeader>
-                <SlickPara
-                  size="1.2vw"
-                  data-aos="fade-right"
-                  data-aos-delay="300"
-                  data-aos-duration="1000"
-                >
-                  {data[1].quote}
-                </SlickPara>
-                <SlickItem size="1.2vw">
-                  <Link to="/service">
-                    <span
-                      style={{
-                        color: "white",
-                        position: "relative",
-                        bottom: 12,
-                      }}
-                    >
-                      See More
-                    </span>
-                    <FeatherIcon
-                      style={{ stroke: "#FFF" }}
-                      icon="chevron-right"
-                      size="32"
-                    />
-                  </Link>
-                </SlickItem>
-              </SlickCard>
-            </div>
-          </div>
-          {/* Third Slide */}
-          <div>
-            <div
-              style={{
-                backgroundImage: `url(${slideThird})`,
-                // backgroundImage: `url(${obj.link})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPositionY: "center",
-                cursor: "grab",
-              }}
-            >
-              <SlickCard>
-                <SlickHeader
-                  size="3.8vw"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  data-aos-duration="1000"
-                >
-                  {data[2].header}
-                </SlickHeader>
-                <SlickPara
-                  size="1.2vw"
-                  data-aos="fade-right"
-                  data-aos-delay="300"
-                  data-aos-duration="1000"
-                >
-                  {data[2].quote}
-                </SlickPara>
-                <SlickItem size="1.2vw">
-                  <Link to="/service">
-                    <span
-                      style={{
-                        color: "white",
-                        position: "relative",
-                        bottom: 12,
-                      }}
-                    >
-                      See More
-                    </span>
-                    <FeatherIcon
-                      style={{ stroke: "#FFF" }}
-                      icon="chevron-right"
-                      size="32"
-                    />
-                  </Link>
-                </SlickItem>
-              </SlickCard>
-            </div>
-          </div>
-          {/* Fourth Slide */}
-          <div>
-            <div
-              style={{
-                backgroundImage: `url(${slideFour})`,
-                // backgroundImage: `url(${obj.link})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPositionY: "center",
-                cursor: "grab",
-              }}
-            >
-              <SlickCard>
-                <SlickHeader
-                  size="3.8vw"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  data-aos-duration="1000"
-                >
-                  {data[3].header}
-                </SlickHeader>
-                <SlickPara
-                  size="1.2vw"
-                  data-aos="fade-right"
-                  data-aos-delay="300"
-                  data-aos-duration="1000"
-                >
-                  {data[3].quote}
-                </SlickPara>
-                <SlickItem size="1.2vw">
-                  <Link to="/service">
-                    <span
-                      style={{
-                        color: "white",
-                        position: "relative",
-                        bottom: 12,
-                      }}
-                    >
-                      See More
-                    </span>
-                    <FeatherIcon
-                      style={{ stroke: "#FFF" }}
-                      icon="chevron-right"
-                      size="32"
-                    />
-                  </Link>
-                </SlickItem>
-              </SlickCard>
-            </div>
-          </div>
+          ))}
         </Slider>
       </SlickRow>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="loader">SYNERGENCE</div>}>
         <Comments />
       </Suspense>
     </FlexContainer>

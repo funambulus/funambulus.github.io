@@ -1,14 +1,22 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Card, FlexCol, FlexContainer, FlexRow } from "../Styles";
 import aboutTopImage from "./../assets/about-us/pexels-rodnae-productions-7581127.webp";
+import "./style.css";
 
 const Comments = React.lazy(() =>
   import("./../Component/ReusableComponents/Comments")
 );
 
 const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0, // could be negative value
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
-    <FlexContainer>
+    <FlexContainer data-aos="fade-in" data-aos-duration="400">
       <FlexRow>
         <FlexCol
           style={{
@@ -20,7 +28,6 @@ const AboutPage = () => {
             src={aboutTopImage}
             className="aboutTopImage"
             alt="annie-spratt"
-            loading="eager"
           />
           <div className="aboutTopCard">
             <div className="heading-1">Who We Are?</div>

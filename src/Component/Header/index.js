@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FlexCol, FlexContainer, FlexRowHeader } from "../../Styles";
 import "./style.css";
 
-const Header = (props) => {
-  let currentPage = props.selected;
+const Header = () => {
+  const location = useLocation();
   return (
     <FlexContainer className="px-5">
       <FlexRowHeader>
@@ -16,7 +16,7 @@ const Header = (props) => {
           <Link
             to="/"
             className={
-              currentPage === "home" ? "color-grey active" : "color-grey"
+              location.pathname === "/home" ? "color-grey active" : "color-grey"
             }
           >
             HOME
@@ -26,7 +26,9 @@ const Header = (props) => {
           <Link
             to="/service"
             className={
-              currentPage === "service" ? "color-grey active" : "color-grey"
+              location.pathname === "/service"
+                ? "color-grey active"
+                : "color-grey"
             }
           >
             SERVICES
@@ -36,7 +38,9 @@ const Header = (props) => {
           <Link
             to="/about"
             className={
-              currentPage === "about" ? "color-grey active" : "color-grey"
+              location.pathname === "/about"
+                ? "color-grey active"
+                : "color-grey"
             }
           >
             ABOUT US
@@ -46,7 +50,9 @@ const Header = (props) => {
           <Link
             to="/contact"
             className={
-              currentPage === "contact" ? "color-grey active" : "color-grey"
+              location.pathname === "/contact"
+                ? "color-grey active"
+                : "color-grey"
             }
           >
             CONTACT US

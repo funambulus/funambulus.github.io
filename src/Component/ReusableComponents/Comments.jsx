@@ -33,7 +33,7 @@ const Comments = () => {
           </div>
         </FlexCol>
       </FlexRow>
-      <Card data-aos="fade-in">
+      <Card>
         <FlexRow style={{ minHeight: "16vh" }}>
           <FlexCol size="10" className="testimonials_desc">
             <p>
@@ -52,7 +52,7 @@ const Comments = () => {
           </FlexCol>
         </FlexRow>
       </Card>
-      <Card data-aos="fade-in">
+      <Card>
         <FlexRow style={{ minHeight: "16vh" }}>
           <FlexCol size="10" className="testimonials_desc">
             <p>

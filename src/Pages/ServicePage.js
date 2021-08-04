@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import {
   FlexCol,
   FlexContainer,
@@ -20,11 +20,22 @@ import service7 from "./../assets/experts-on-Call/pexels-anna-shvets-4226256.web
 import serviceTopImage from "./../assets/services/joao-ferrao-4YzrcDNcRVg-unsplash.webp";
 // import FeatherIcon from 'feather-icons-react';
 import { useHistory } from "react-router";
+import "./style.css";
 
 const ServicePage = () => {
   const scrollTo = (id) => {
-    document.querySelector("#" + id).scrollIntoView({ behavior: "smooth" });
+    document
+      .querySelector("#" + id)
+      .scrollIntoView({ behavior: "smooth", block: "center" });
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0, // could be negative value
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const history = useHistory();
   const service = [
     {
@@ -177,8 +188,8 @@ const ServicePage = () => {
   ];
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <FlexContainer>
+    <Suspense fallback={<div className="loader">SYNERGENCE</div>}>
+      <FlexContainer data-aos="fade-in" data-aos-duration="400">
         <FlexRow>
           <FlexCol
             style={{
@@ -190,7 +201,6 @@ const ServicePage = () => {
               src={serviceTopImage}
               className="aboutTopImage"
               alt="Markus Spiske"
-              loading="eager"
             />
             <div className="aboutTopCard">
               <div className="heading-1">Our Services</div>

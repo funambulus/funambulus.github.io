@@ -27,23 +27,20 @@ function App() {
   }, []);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className="loader">SYNERGENCE</div>}>
       <Fragment>
+        <Header />
         <Switch>
           <Route exact path="/">
-            <Header selected="home" />
             <HomePage />
           </Route>
           <Route exact path="/service">
-            <Header selected="service" />
             <ServicePage />
           </Route>
           <Route exact path="/about">
-            <Header selected="about" />
             <AboutPage />
           </Route>
           <Route exact path="/contact">
-            <Header selected="contact" />
             <ContactPage />
           </Route>
           <Route exact>

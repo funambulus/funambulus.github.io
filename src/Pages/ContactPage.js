@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import sendNodeMail from "../Constant/Email/sendEmailJS";
 import { FlexCol, FlexContainer, FlexRow } from "../Styles";
 import contactTopImage from "./../assets/contacts/damian-zaleski.webp";
 import contactTopImage2 from "./../assets/contacts/tamas-tuzes-katai.webp";
+import "./style.css";
 
 const ContactPage = () => {
   const [form, setform] = useState({
@@ -20,8 +21,16 @@ const ContactPage = () => {
     setform(temp1);
     console.log(form);
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0, // could be negative value
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
-    <FlexContainer>
+    <FlexContainer data-aos="fade-in" data-aos-duration="400">
       <FlexRow>
         <FlexCol
           style={{
