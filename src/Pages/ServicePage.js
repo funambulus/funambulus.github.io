@@ -69,10 +69,7 @@ const ServicePage = () => {
               recruiters
             </li>
           </ul>
-          <div
-            className="know-more-container"
-            style={{ textAlign: "center", paddingRight: 20 }}
-          >
+          <div style={{ textAlign: "center", paddingRight: 20 }}>
             <button
               className="buttonStyled"
               onClick={() => history.push("/contact")}

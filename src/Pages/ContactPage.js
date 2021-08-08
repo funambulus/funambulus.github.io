@@ -54,7 +54,7 @@ const ContactPage = () => {
           </div>
         </FlexCol>
       </FlexRow>
-      <FlexRow style={{ minHeight: "30vh" }}>
+      <FlexRow style={{ minHeight: "30vh" }} className="contactForm">
         <FlexCol>
           <p className="contactFormTitle">
             {" "}

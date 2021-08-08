@@ -7,28 +7,40 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    .mobile-sm {
+        display: flex!important;
+    }
+    .hide-mobile-sm {
+        display: none!important;
+        flex: 0!important;
+    }
     .companyName {
         font-size: 18px!important;
-        min-width: 98%;
-        text-align: center;
+        text-align: left;
     }
     .companyName>span {
         font-size: 8px!important;
-        top: 20px!important;
-        left: 60%!important;
     }
     .headerLink {
         margin: 0 8px!important;
     }
     .headerLink>a {
         font-size: 12px!important;
+        padding: 8px 0;
     }
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .headerLink {
     text-align: center;
     min-width: fit-content;
     margin: 0 16px;
+    display: flex;
+    flex-direction: row;
+    min-width: 440px;
 }
 
 a:hover {
@@ -69,6 +81,10 @@ a:hover {
 
 
 /* Layout */
+
+.pt-5 {
+    padding-top: 16px;
+}
 
 
 /* Underline styles */

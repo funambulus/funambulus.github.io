@@ -5,12 +5,15 @@ export const FlexContainer = styled.div`
   overflow: hidden;
 `;
 export const FlexRowHeader = styled.div`
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 32px 24px;
+  }
 `;
 export const FlexRow = styled.div`
   //   min-height: 80vh;
@@ -42,19 +45,26 @@ export const SlickItem = styled.div`
   font-size: ${(props) => props.size};
   padding: 16px 0;
   color: white;
-  justifycontent: center;
+  justify-content: center;
 `;
 export const SlickHeader = styled.div`
   font-size: ${(props) => props.size};
   font-weight: 500;
   padding-top: 70px;
   color: white;
+  text-align: right;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 `;
 export const SlickPara = styled.div`
   font-size: ${(props) => props.size};
-  max-width: 450px;
+  max-width: 480px;
   text-align: right;
   color: #e8e8e8;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 export const Card = styled.div`
   margin: 15px 20%;
@@ -63,9 +73,14 @@ export const Card = styled.div`
   max-height: 40vh;
   box-shadow: ${(props) =>
     props.noshadow ? "none" : "2px 5px 20px -3px #00000033"};
-  margin-bottom: 40px;
   border-radius: 5px;
   overflow: hidden;
+  @media (max-width: 768px) {
+    margin: 0 4%;
+    padding: 0 30px;
+    min-height: 136px;
+    margin-bottom: 24px;
+  }
 `;
 export const ServiceContainer = styled.div`
   display: flex;
@@ -99,6 +114,9 @@ export const ServicesInfo = styled.div`
   min-height: 40%;
   justify-content: flex-end;
   align-items: flex-start;
+  @media (max-width: 768px) {
+    margin-top: 24px;
+  }
 `;
 export const ServiceInfoHead = styled.div`
   width: 100%;
@@ -106,6 +124,10 @@ export const ServiceInfoHead = styled.div`
   font-weight: bold;
   text-align: center;
   color: #373a40;
+  padding: 0 8px;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const Divider = styled.div`

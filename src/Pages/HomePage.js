@@ -87,7 +87,7 @@ const HomePage = () => {
               >
                 <SlickCard>
                   <SlickHeader
-                    size="3.8vw"
+                    size="48px"
                     data-aos="fade-right"
                     data-aos-delay="100"
                     data-aos-duration="1000"
@@ -95,7 +95,7 @@ const HomePage = () => {
                     {v.header}
                   </SlickHeader>
                   <SlickPara
-                    size="1.2vw"
+                    size="18px"
                     data-aos="fade-right"
                     data-aos-delay="300"
                     data-aos-duration="1000"
@@ -103,12 +103,13 @@ const HomePage = () => {
                     {v.quote}
                   </SlickPara>
                   <SlickItem size="1.2vw">
-                    <Link to="/service">
+                    <Link to="/service" className="hover-icon">
                       <span
                         style={{
                           color: "white",
                           position: "relative",
                           bottom: 12,
+                          fontSize: 19,
                         }}
                       >
                         See More

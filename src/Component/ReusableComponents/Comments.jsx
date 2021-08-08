@@ -22,11 +22,15 @@ const Comments = () => {
           <div
             style={{
               color: "white",
+              height: "100%",
               fontSize: 36,
               fontWeight: "bold",
-              padding: "78px 0px",
+              padding: "0 11px",
               textAlign: "center",
               backdropFilter: "brightness(0.5)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             Our Satisfied Customers
@@ -43,7 +47,7 @@ const Comments = () => {
             </p>
             <p>~ Akash Kotian</p>
           </FlexCol>
-          <FlexCol size="2">
+          <FlexCol size="2" className="hide-mobile-sm">
             <img
               src={varunKotian}
               alt="profile"
@@ -61,7 +65,7 @@ const Comments = () => {
             </p>
             <p>~ Diana Fernandes</p>
           </FlexCol>
-          <FlexCol size="2">
+          <FlexCol size="2" className="hide-mobile-sm">
             <img
               src={dianaFernandes}
               alt="profile"

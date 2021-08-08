@@ -24,6 +24,15 @@
     padding: 0 40px;
 }
 
+@media screen and (max-width: 768px) {
+    .testimonials_desc {
+        font-size: 16px!important;
+    }
+    .testimonials_desc>p:nth-child(1) {
+        font-size: 16px!important;
+    }
+}
+
 .testimonials_desc>p:nth-child(1) {
     font-size: 1.2vw;
 }
@@ -78,6 +87,18 @@
     font-size: 16px;
     text-align: left;
     border: 1px solid white;
+}
+
+@media screen and (max-width:768px) {
+    .heading-1 {
+        font-size: 40px;
+    }
+    .divider {
+        margin-bottom: 32px;
+    }
+    .para-1 {
+        padding: 24px 24px;
+    }
 }
 
 
@@ -161,7 +182,7 @@ min-width: 50%;
 
 .contactTextContainer {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 15%;
     width: 50%;
     height: 200px;
@@ -172,12 +193,12 @@ min-width: 50%;
 .contactTitle {
     color: white;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .contactInfo {
     color: white;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -190,6 +211,20 @@ min-width: 50%;
     }
     .testimonials_image {
         display: none;
+    }
+    .contactImage {
+        object-position: left;
+    }
+    .contactTitle {
+        font-size: 16px;
+    }
+    .contactTextContainer {
+        top: 48%;
+        left: 8%;
+        width: 80%;
+    }
+    .contactForm {
+        min-height: 20vh!important;
     }
 }
 
@@ -265,7 +300,7 @@ min-width: 50%;
     background: white;
     margin: 30px 0;
     padding: 12px;
-    width: 50%;
+    min-width: 160px;
     font-size: 20px;
     font-weight: 800;
     cursor: pointer;
@@ -282,7 +317,7 @@ min-width: 50%;
 .service_list {
     position: absolute;
     right: 48px;
-    bottom: 8%;
+    top: 8%;
     margin: auto;
     padding-bottom: 2%;
     color: #FFF;
@@ -304,15 +339,13 @@ min-width: 50%;
     .service_list {
         display: none;
     }
-    .know-more-container {
-        text-align: left!important;
-    }
     .hide-on-smaller-screens {
         display: none;
     }
     .expand-width {
         width: 80%;
         max-width: 100%!important;
+        padding: 0!important;
     }
     .justify-content-center {
         justify-content: center!important;
@@ -324,4 +357,16 @@ min-width: 50%;
     .sectionImage {
         display: none;
     }
+}
+
+.hover-icon {
+    transition: 0.4s ease-in-out;
+    position: relative;
+    left: 0px
+}
+
+.hover-icon:hover {
+    transition: 0.4s ease-in-out;
+    position: relative;
+    left: 8px;
 }

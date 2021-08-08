@@ -1,20 +1,8 @@
 import React from "react";
+import "./style.css";
 
 const Footer = () => {
-  return (
-    <div
-      style={{
-        background: "#70e9f1",
-        marginTop: 120,
-        minHeight: 10,
-        width: "100%",
-        padding: "10px 0",
-        textAlign: "center",
-      }}
-    >
-      @2021 Synergence. All rights reserved.
-    </div>
-  );
+  return <div className="footer">@2021 Synergence. All rights reserved.</div>;
 };
 
 export default Footer;
