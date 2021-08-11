@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FlexCol, FlexContainer, FlexRow, FlexRowHeader } from "../../Styles";
 import FeatherIcon from "feather-icons-react";
+import { ShowWindowDimensions } from "../../Constant/Dimensions/showDimension";
 import "./style.css";
 
 const Header = () => {
   const location = useLocation();
   const [menu, setMenu] = useState(false);
+  const [w] = ShowWindowDimensions();
+  useEffect(() => {
+    // used for closing open menu of mobile devices
+    if (w > 768) {
+      setMenu(false);
+    }
+  }, [w]);
   return (
     <FlexContainer className="px-5">
       <FlexRowHeader>
@@ -16,7 +24,7 @@ const Header = () => {
         </FlexCol>
         <FlexCol size="1" className="mobile-menu mobile-sm">
           <FeatherIcon
-            style={{ stroke: "#000" }}
+            style={{ stroke: "#000", cursor: "pointer" }}
             icon="menu"
             size="32"
             onClick={() => setMenu((x) => !x)}
@@ -31,6 +39,7 @@ const Header = () => {
                   ? "color-grey active"
                   : "color-grey"
               }
+              onClick={() => setMenu(false)}
             >
               HOME
             </Link>
@@ -41,6 +50,7 @@ const Header = () => {
                   ? "color-grey active"
                   : "color-grey"
               }
+              onClick={() => setMenu(false)}
             >
               SERVICES
             </Link>
@@ -51,6 +61,7 @@ const Header = () => {
                   ? "color-grey active"
                   : "color-grey"
               }
+              onClick={() => setMenu(false)}
             >
               ABOUT US
             </Link>
@@ -61,6 +72,7 @@ const Header = () => {
                   ? "color-grey active"
                   : "color-grey"
               }
+              onClick={() => setMenu(false)}
             >
               CONTACT US
             </Link>

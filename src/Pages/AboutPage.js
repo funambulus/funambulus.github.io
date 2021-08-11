@@ -77,7 +77,6 @@ const AboutPage = () => {
       <Card
         noshadow
         style={{
-          marginRight: "20%",
           marginTop: 50,
           padding: 0,
           overflow: "hidden",

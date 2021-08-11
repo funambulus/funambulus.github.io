@@ -210,7 +210,10 @@ min-width: 50%;
         display: none;
     }
     .testimonials_image {
-        display: none;
+        /* display: none; */
+    }
+    .testimonials_container {
+        flex-direction: column-reverse!important;
     }
     .contactImage {
         object-position: left;

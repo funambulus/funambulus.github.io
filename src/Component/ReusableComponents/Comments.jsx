@@ -38,7 +38,10 @@ const Comments = () => {
         </FlexCol>
       </FlexRow>
       <Card>
-        <FlexRow style={{ minHeight: "16vh" }}>
+        <FlexRow
+          style={{ minHeight: "16vh" }}
+          className="testimonials_container"
+        >
           <FlexCol size="10" className="testimonials_desc">
             <p>
               “What makes the experience with Synergence completely worth it is
@@ -47,7 +50,7 @@ const Comments = () => {
             </p>
             <p>~ Akash Kotian</p>
           </FlexCol>
-          <FlexCol size="2" className="hide-mobile-sm">
+          <FlexCol size="2">
             <img
               src={varunKotian}
               alt="profile"
@@ -65,7 +68,7 @@ const Comments = () => {
             </p>
             <p>~ Diana Fernandes</p>
           </FlexCol>
-          <FlexCol size="2" className="hide-mobile-sm">
+          <FlexCol size="2">
             <img
               src={dianaFernandes}
               alt="profile"

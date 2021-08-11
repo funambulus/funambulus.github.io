@@ -70,16 +70,17 @@ export const Card = styled.div`
   margin: 15px 20%;
   padding: 30px;
   min-height: 25vh;
-  max-height: 40vh;
   box-shadow: ${(props) =>
     props.noshadow ? "none" : "2px 5px 20px -3px #00000033"};
   border-radius: 5px;
   overflow: hidden;
-  @media (max-width: 768px) {
-    margin: 0 4%;
-    padding: 0 30px;
+  @media (max-width: 768px) { */
+    padding: 0 8px;
     min-height: 136px;
+    width: 70%;
+    margin: auto;
     margin-bottom: 24px;
+    flex-direction: column-reverse;
   }
 `;
 export const ServiceContainer = styled.div`
