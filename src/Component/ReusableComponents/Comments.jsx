@@ -60,7 +60,10 @@ const Comments = () => {
         </FlexRow>
       </Card>
       <Card>
-        <FlexRow style={{ minHeight: "16vh" }}>
+        <FlexRow
+          style={{ minHeight: "16vh" }}
+          className="testimonials_container"
+        >
           <FlexCol size="10" className="testimonials_desc">
             <p>
               “Thanks to the team at Synergence & especially my Coach who

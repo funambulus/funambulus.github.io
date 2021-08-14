@@ -10,6 +10,9 @@ a {
     .mobile-sm {
         display: flex!important;
     }
+    .px-5 {
+        padding: 0!important;
+    }
     .hide-mobile-sm {
         display: none!important;
         flex: 0!important;
