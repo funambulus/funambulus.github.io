@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 import sendNodeMail from "../Constant/Email/sendEmailJS";
 import { FlexCol, FlexContainer, FlexRow } from "../Styles";
 import contactTopImage from "./../assets/contacts/damian-zaleski.webp";
@@ -71,7 +72,7 @@ const ContactPage = () => {
             className="contactInputs"
             value={form.name}
             onChange={(e) => handleChange(e)}
-            placeholder="John Doe"
+            placeholder="e.g. John Doe"
           />
           <label>Mobile Number:</label>
           <input
@@ -80,7 +81,7 @@ const ContactPage = () => {
             className="contactInputs"
             value={form.phone}
             onChange={(e) => handleChange(e)}
-            placeholder="+91888777999"
+            placeholder="e.g. (+91)888-777-999"
           />
           <label>Email:</label>
           <input
@@ -89,16 +90,16 @@ const ContactPage = () => {
             className="contactInputs"
             value={form.email}
             onChange={(e) => handleChange(e)}
-            placeholder="johndoe@youremail.com"
+            placeholder="e.g. john.doe@example.com"
           />
-          <label>Message</label>
+          <label>Message:</label>
           <input
             name="message"
             type="text"
             className="contactInputs"
             value={form.message}
             onChange={(e) => handleChange(e)}
-            placeholder="Any message..."
+            placeholder="Write your message here"
           />
           <button
             onClick={() => {
@@ -110,9 +111,13 @@ const ContactPage = () => {
                 form.message
               ) {
                 sendNodeMail(form.name, form.email, form.phone, form.message);
-                alert("Successfully sent");
+                Swal.fire(
+                  "Email Sent!",
+                  "Thank you for sending us your details. Our team will contact you shortly.",
+                  "success"
+                );
               } else {
-                alert("Fill all required fields");
+                Swal.fire("Oops!", "Some fields are looking empty :)", "error");
               }
             }}
           >

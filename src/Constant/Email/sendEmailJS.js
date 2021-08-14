@@ -13,11 +13,6 @@ export default function sendNodeMail(fromName, fromEmail, phone, message) {
     replyTo: fromEmail,
   };
 
-  // console.log('Message sent', '\n' + fromName);
-  // console.log(fromEmail);
-  // console.log(message);
-  // console.log(sender.service_id);
-  // console.log(sender.template_id);
   emailjs.send("service_al1o25n", "template_jmmjhty", params).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);

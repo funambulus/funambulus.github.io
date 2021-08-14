@@ -265,6 +265,11 @@ min-width: 50%;
     margin: 12px 0;
     width: 80%;
     font-size: 20px;
+    color: darkslategray;
+}
+
+.formInputs>.contactInputs::placeholder {
+    color: #2f4f4f91;
 }
 
 .formInputs>.contactInputs:focus {

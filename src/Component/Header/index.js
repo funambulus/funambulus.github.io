@@ -35,9 +35,7 @@ const Header = () => {
             <Link
               to="/"
               className={
-                location.pathname === "/home"
-                  ? "color-grey active"
-                  : "color-grey"
+                location.pathname === "/" ? "color-grey active" : "color-grey"
               }
               onClick={() => setMenu(false)}
             >
@@ -83,9 +81,7 @@ const Header = () => {
             <Link
               to="/"
               className={
-                location.pathname === "/home"
-                  ? "color-grey active"
-                  : "color-grey"
+                location.pathname === "/" ? "color-grey active" : "color-grey"
               }
             >
               HOME
