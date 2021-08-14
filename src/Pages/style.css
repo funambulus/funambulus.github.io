@@ -211,6 +211,7 @@ min-width: 50%;
         display: none;
     }
     .testimonials_container {
+        padding-top: 16px;
         flex-direction: column-reverse!important;
     }
     .contactImage {
@@ -226,6 +227,9 @@ min-width: 50%;
     }
     .contactForm {
         min-height: 20vh!important;
+    }
+    .contactFormTitle {
+        padding: 0 12%!important;
     }
 }
 
