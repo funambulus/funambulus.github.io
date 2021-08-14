@@ -1,0 +1,2 @@
+(this.webpackJsonpfunambulus=this.webpackJsonpfunambulus||[]).push([[13],{87:function(e,n,s){},90:function(e,n,s){"use strict";s.r(n);s(0),s(87);var u=s(1);n.default=function(){return Object(u.jsx)("div",{className:"footer",children:"@2021 Synergence. All rights reserved."})}}}]);
+//# sourceMappingURL=13.15262712.chunk.js.map
