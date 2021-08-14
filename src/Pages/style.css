@@ -172,7 +172,7 @@ min-width: 50%;
     object-fit: cover;
 }
 
-.extralayer {
+.extraLayer {
     position: absolute;
     top: 0;
     left: 0;
@@ -209,9 +209,6 @@ min-width: 50%;
     }
     .formImageContainer {
         display: none;
-    }
-    .testimonials_image {
-        /* display: none; */
     }
     .testimonials_container {
         flex-direction: column-reverse!important;

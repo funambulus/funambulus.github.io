@@ -71,7 +71,7 @@ export const Card = styled.div`
   padding: 30px;
   min-height: 25vh;
   box-shadow: ${(props) =>
-    props.noshadow ? "none" : "2px 5px 20px -3px #00000033"};
+    props.noShadow ? "none" : "2px 5px 20px -3px #00000033"};
   border-radius: 5px;
   overflow: hidden;
   @media (max-width: 768px) {

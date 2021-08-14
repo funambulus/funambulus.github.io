@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, FlexCol, FlexRow } from "../../Styles";
-import testimonalHead from "../../assets/services/bram-naus-customers.webp";
+import testimonialHead from "../../assets/services/bram-naus-customers.webp";
 import dianaFernandes from "../../assets/customers/diana-fernandes.webp";
 import varunKotian from "../../assets/customers/varun_kotian.webp";
 
@@ -12,7 +12,7 @@ const Comments = () => {
       <FlexRow style={{ minHeight: "50vh" }}>
         <FlexCol
           style={{
-            background: `url(${testimonalHead})`,
+            background: `url(${testimonialHead})`,
             backgroundSize: "cover",
             height: 200,
             backgroundPosition: "0 45%",

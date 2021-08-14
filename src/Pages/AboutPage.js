@@ -46,7 +46,7 @@ const AboutPage = () => {
       <br />
       <br /> */}
       <Card
-        noshadow
+        noShadow
         style={{
           marginTop: 50,
           padding: 0,
@@ -75,7 +75,7 @@ const AboutPage = () => {
         </FlexRow>
       </Card>
       <Card
-        noshadow
+        noShadow
         style={{
           marginTop: 50,
           padding: 0,

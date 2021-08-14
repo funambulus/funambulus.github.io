@@ -44,7 +44,7 @@ const ContactPage = () => {
             className="contactImage"
             alt="damian-zaleski"
           />
-          <div className="extralayer"></div>
+          <div className="extraLayer"></div>
           <div className="contactTextContainer">
             <div className="contactInfo">
               We are glad you’re taking this important step towards accelerating
