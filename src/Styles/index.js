@@ -78,7 +78,7 @@ export const Card = styled.div`
     padding: 0 8px;
     min-height: 136px;
     width: 70%;
-    margin: 0 auto !important;
+    margin: 12px auto !important;
     flex-direction: column-reverse;
   }
   @media (max-width: 380px) {
